@@ -1,0 +1,4 @@
+name: flax
+channels:
+  - defaults
+prefix: /home/alishbaimran/miniconda3/envs/flax

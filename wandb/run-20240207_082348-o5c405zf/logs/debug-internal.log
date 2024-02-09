@@ -1,0 +1,866 @@
+2024-02-07 08:23:48,720 INFO    StreamThr :2320742 [internal.py:wandb_internal():86] W&B internal server running at pid: 2320742, started at: 2024-02-07 08:23:48.719754
+2024-02-07 08:23:48,721 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status
+2024-02-07 08:23:48,723 INFO    WriterThread:2320742 [datastore.py:open_for_write():85] open: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/run-o5c405zf.wandb
+2024-02-07 08:23:48,724 DEBUG   SenderThread:2320742 [sender.py:send():382] send: header
+2024-02-07 08:23:48,730 DEBUG   SenderThread:2320742 [sender.py:send():382] send: run
+2024-02-07 08:23:49,019 INFO    SenderThread:2320742 [dir_watcher.py:__init__():211] watching files in: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files
+2024-02-07 08:23:49,019 INFO    SenderThread:2320742 [sender.py:_start_run_threads():1136] run started: o5c405zf with start time 1707294228.718114
+2024-02-07 08:23:49,032 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: check_version
+2024-02-07 08:23:49,033 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: check_version
+2024-02-07 08:23:49,151 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: run_start
+2024-02-07 08:23:49,172 DEBUG   HandlerThread:2320742 [system_info.py:__init__():32] System info init
+2024-02-07 08:23:49,172 DEBUG   HandlerThread:2320742 [system_info.py:__init__():47] System info init done
+2024-02-07 08:23:49,172 INFO    HandlerThread:2320742 [system_monitor.py:start():194] Starting system monitor
+2024-02-07 08:23:49,172 INFO    SystemMonitor:2320742 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-02-07 08:23:49,174 INFO    HandlerThread:2320742 [system_monitor.py:probe():214] Collecting system info
+2024-02-07 08:23:49,174 INFO    SystemMonitor:2320742 [interfaces.py:start():190] Started cpu monitoring
+2024-02-07 08:23:49,176 INFO    SystemMonitor:2320742 [interfaces.py:start():190] Started disk monitoring
+2024-02-07 08:23:49,177 INFO    SystemMonitor:2320742 [interfaces.py:start():190] Started gpu monitoring
+2024-02-07 08:23:49,178 INFO    SystemMonitor:2320742 [interfaces.py:start():190] Started memory monitoring
+2024-02-07 08:23:49,179 INFO    SystemMonitor:2320742 [interfaces.py:start():190] Started network monitoring
+2024-02-07 08:23:49,328 DEBUG   HandlerThread:2320742 [system_info.py:probe():196] Probing system
+2024-02-07 08:23:49,331 DEBUG   HandlerThread:2320742 [system_info.py:_probe_git():181] Probing git
+2024-02-07 08:23:49,343 DEBUG   HandlerThread:2320742 [system_info.py:_probe_git():189] Probing git done
+2024-02-07 08:23:49,343 DEBUG   HandlerThread:2320742 [system_info.py:probe():244] Probing system done
+2024-02-07 08:23:49,343 DEBUG   HandlerThread:2320742 [system_monitor.py:probe():223] {'os': 'Linux-6.5.0-4-amd64-x86_64-with-glibc2.35', 'python': '3.11.5', 'heartbeatAt': '2024-02-07T08:23:49.328347', 'startedAt': '2024-02-07T08:23:48.707851', 'docker': None, 'cuda': None, 'args': ('--wandb',), 'state': 'running', 'program': '/home/alishbaimran/projects/flaxmodels/training/resnet/main.py', 'codePathLocal': 'main.py', 'codePath': 'training/resnet/main.py', 'git': {'remote': 'https://github.com/matthias-wright/flaxmodels.git', 'commit': '600ce8a6b6bf2926ccfc948e7c1ff35edc330d5b'}, 'email': 'alishbai734@gmail.com', 'root': '/home/alishbaimran/projects/flaxmodels', 'host': 'pabti4', 'username': 'alishbaimran', 'executable': '/home/alishbaimran/miniconda3/bin/python', 'cpu_count': 24, 'cpu_count_logical': 48, 'cpu_freq': {'current': 2537.471, 'min': 1000.0, 'max': 3700.0}, 'cpu_freq_per_core': [{'current': 2641.477, 'min': 1000.0, 'max': 3700.0}, {'current': 3300.0, 'min': 1000.0, 'max': 3700.0}, {'current': 3299.997, 'min': 1000.0, 'max': 3700.0}, {'current': 3299.734, 'min': 1000.0, 'max': 3700.0}, {'current': 3299.992, 'min': 1000.0, 'max': 3700.0}, {'current': 1184.319, 'min': 1000.0, 'max': 3700.0}, {'current': 3300.008, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.355, 'min': 1000.0, 'max': 3700.0}, {'current': 3297.307, 'min': 1000.0, 'max': 3700.0}, {'current': 3299.999, 'min': 1000.0, 'max': 3700.0}, {'current': 3299.998, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.631, 'min': 1000.0, 'max': 3700.0}, {'current': 1691.477, 'min': 1000.0, 'max': 3700.0}, {'current': 1003.557, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.047, 'min': 1000.0, 'max': 3700.0}, {'current': 1595.184, 'min': 1000.0, 'max': 3700.0}, {'current': 3299.968, 'min': 1000.0, 'max': 3700.0}, {'current': 3316.271, 'min': 1000.0, 'max': 3700.0}, {'current': 3316.297, 'min': 1000.0, 'max': 3700.0}, {'current': 999.968, 'min': 1000.0, 'max': 3700.0}, {'current': 3326.301, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.571, 'min': 1000.0, 'max': 3700.0}, {'current': 3317.494, 'min': 1000.0, 'max': 3700.0}, {'current': 3316.127, 'min': 1000.0, 'max': 3700.0}, {'current': 2648.87, 'min': 1000.0, 'max': 3700.0}, {'current': 3300.192, 'min': 1000.0, 'max': 3700.0}, {'current': 3298.559, 'min': 1000.0, 'max': 3700.0}, {'current': 3299.998, 'min': 1000.0, 'max': 3700.0}, {'current': 3299.867, 'min': 1000.0, 'max': 3700.0}, {'current': 1181.093, 'min': 1000.0, 'max': 3700.0}, {'current': 3300.003, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.024, 'min': 1000.0, 'max': 3700.0}, {'current': 3299.998, 'min': 1000.0, 'max': 3700.0}, {'current': 3299.998, 'min': 1000.0, 'max': 3700.0}, {'current': 3295.348, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.151, 'min': 1000.0, 'max': 3700.0}, {'current': 1686.508, 'min': 1000.0, 'max': 3700.0}, {'current': 1200.627, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.031, 'min': 1000.0, 'max': 3700.0}, {'current': 1608.076, 'min': 1000.0, 'max': 3700.0}, {'current': 3316.781, 'min': 1000.0, 'max': 3700.0}, {'current': 3315.76, 'min': 1000.0, 'max': 3700.0}, {'current': 3300.312, 'min': 1000.0, 'max': 3700.0}, {'current': 999.997, 'min': 1000.0, 'max': 3700.0}, {'current': 3316.774, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.006, 'min': 1000.0, 'max': 3700.0}, {'current': 3316.78, 'min': 1000.0, 'max': 3700.0}, {'current': 3316.777, 'min': 1000.0, 'max': 3700.0}], 'disk': {'/': {'total': 418.4661865234375, 'used': 20.914794921875}}, 'gpu': 'NVIDIA TITAN Xp', 'gpu_count': 8, 'gpu_devices': [{'name': 'NVIDIA TITAN Xp', 'memory_total': 12884901888}, {'name': 'NVIDIA TITAN Xp', 'memory_total': 12884901888}, {'name': 'NVIDIA TITAN Xp', 'memory_total': 12884901888}, {'name': 'NVIDIA TITAN Xp', 'memory_total': 12884901888}, {'name': 'NVIDIA TITAN Xp', 'memory_total': 12884901888}, {'name': 'NVIDIA TITAN Xp', 'memory_total': 12884901888}, {'name': 'NVIDIA TITAN Xp', 'memory_total': 12884901888}, {'name': 'NVIDIA TITAN Xp', 'memory_total': 12884901888}], 'memory': {'total': 376.5542106628418}}
+2024-02-07 08:23:49,344 INFO    HandlerThread:2320742 [system_monitor.py:probe():224] Finished collecting system info
+2024-02-07 08:23:49,344 INFO    HandlerThread:2320742 [system_monitor.py:probe():227] Publishing system info
+2024-02-07 08:23:49,344 DEBUG   HandlerThread:2320742 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2024-02-07 08:23:49,345 DEBUG   HandlerThread:2320742 [system_info.py:_save_pip():68] Saving pip packages done
+2024-02-07 08:23:49,345 DEBUG   HandlerThread:2320742 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2024-02-07 08:23:50,020 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_created():271] file/dir created: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/conda-environment.yaml
+2024-02-07 08:23:50,020 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_created():271] file/dir created: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/requirements.txt
+2024-02-07 08:23:53,978 DEBUG   HandlerThread:2320742 [system_info.py:_save_conda():87] Saving conda packages done
+2024-02-07 08:23:53,980 INFO    HandlerThread:2320742 [system_monitor.py:probe():229] Finished publishing system info
+2024-02-07 08:23:53,999 DEBUG   SenderThread:2320742 [sender.py:send():382] send: files
+2024-02-07 08:23:54,000 INFO    SenderThread:2320742 [sender.py:_save_file():1392] saving file wandb-metadata.json with policy now
+2024-02-07 08:23:54,001 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:23:54,007 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:23:54,007 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:23:54,010 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:23:54,021 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/conda-environment.yaml
+2024-02-07 08:23:54,022 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_created():271] file/dir created: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/wandb-metadata.json
+2024-02-07 08:23:54,209 DEBUG   SenderThread:2320742 [sender.py:send():382] send: telemetry
+2024-02-07 08:23:54,409 INFO    wandb-upload_0:2320742 [upload_job.py:push():131] Uploaded file /tmp/tmptg11n3e0wandb/ywg42op9-wandb-metadata.json
+2024-02-07 08:23:59,210 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:24:04,211 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:24:06,028 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_created():271] file/dir created: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:24:08,029 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:24:09,008 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:24:09,009 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:24:09,012 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:24:10,120 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:24:15,121 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:24:20,127 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:24:21,037 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/config.yaml
+2024-02-07 08:24:24,012 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:24:24,012 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:24:24,012 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:24:26,117 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:24:31,119 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:24:36,120 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:24:39,047 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:24:39,111 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:24:39,111 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:24:39,176 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:24:41,048 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:24:41,723 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:24:43,049 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:24:45,050 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:24:47,051 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:24:47,214 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:24:49,052 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:24:49,180 DEBUG   SystemMonitor:2320742 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-02-07 08:24:49,185 DEBUG   SenderThread:2320742 [sender.py:send():382] send: stats
+2024-02-07 08:24:51,053 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:24:52,860 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:24:53,054 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:24:54,085 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:24:54,085 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:24:54,086 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:24:55,056 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:24:57,057 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:24:58,645 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:24:59,058 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:25:01,059 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:25:03,060 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:25:04,326 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:25:05,061 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:25:07,063 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:25:09,064 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:25:09,084 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:25:09,085 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:25:09,086 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:25:09,540 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:25:11,065 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:25:13,066 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:25:14,920 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:25:15,067 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:25:17,068 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:25:19,069 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:25:19,191 DEBUG   SenderThread:2320742 [sender.py:send():382] send: stats
+2024-02-07 08:25:20,193 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:25:21,070 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:25:23,071 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:25:24,084 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:25:24,085 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:25:24,086 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:25:25,073 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:25:25,850 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:25:27,074 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:25:29,075 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:25:31,076 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:25:31,120 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:25:33,077 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:25:35,078 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:25:36,554 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:25:37,079 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:25:39,080 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:25:39,085 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:25:39,086 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:25:39,086 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:25:41,082 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:25:42,341 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:25:43,083 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:25:45,084 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:25:47,085 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:25:48,261 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:25:49,086 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:25:49,194 DEBUG   SenderThread:2320742 [sender.py:send():382] send: stats
+2024-02-07 08:25:51,087 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:25:53,088 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:25:54,087 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:25:54,087 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:25:54,087 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:25:54,237 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:25:55,093 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:25:57,094 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:25:59,096 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:25:59,710 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:26:01,097 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:26:03,098 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:26:04,917 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:26:05,099 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:26:07,100 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:26:09,085 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:26:09,086 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:26:09,101 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:26:09,102 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:26:10,633 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:26:11,103 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:26:13,105 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:26:15,106 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:26:16,466 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:26:17,107 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:26:19,108 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:26:19,200 DEBUG   SenderThread:2320742 [sender.py:send():382] send: stats
+2024-02-07 08:26:21,110 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:26:21,619 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:26:23,111 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:26:24,086 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:26:24,086 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:26:24,087 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:26:25,112 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:26:27,113 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:26:27,419 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:26:29,114 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:26:31,115 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:26:33,117 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:26:33,361 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:26:35,118 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:26:37,119 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:26:39,086 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:26:39,087 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:26:39,088 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:26:39,120 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:26:39,166 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:26:41,122 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:26:43,123 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:26:44,786 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:26:45,124 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:26:47,125 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:26:49,126 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:26:49,202 DEBUG   SenderThread:2320742 [sender.py:send():382] send: stats
+2024-02-07 08:26:50,328 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:26:51,128 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:26:53,129 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:26:54,086 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:26:54,087 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:26:54,088 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:26:55,130 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:26:56,184 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:26:57,131 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:26:59,133 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:27:01,134 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:27:01,431 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:27:03,135 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:27:05,136 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:27:06,482 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:27:07,137 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:27:09,086 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:27:09,087 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:27:09,088 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:27:09,138 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:27:11,139 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:27:12,070 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:27:13,141 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:27:15,142 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:27:17,120 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:27:17,143 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:27:19,145 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:27:19,207 DEBUG   SenderThread:2320742 [sender.py:send():382] send: stats
+2024-02-07 08:27:21,146 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:27:22,333 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:27:23,147 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:27:24,086 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:27:24,087 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:27:24,088 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:27:25,149 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:27:27,150 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:27:28,148 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:27:29,151 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:27:31,152 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:27:33,153 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:27:34,047 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:27:35,155 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:27:37,156 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:27:39,087 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:27:39,088 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:27:39,089 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:27:39,157 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:27:39,253 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:27:41,158 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:27:43,160 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:27:44,828 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:27:45,161 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:27:47,162 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:27:49,163 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:27:49,215 DEBUG   SenderThread:2320742 [sender.py:send():382] send: stats
+2024-02-07 08:27:50,363 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:27:51,164 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:27:53,165 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:27:54,087 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:27:54,088 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:27:54,088 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:27:55,166 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:27:55,486 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:27:57,167 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:27:59,168 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:28:00,997 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:28:01,169 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:28:03,170 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:28:05,171 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:28:06,064 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:28:07,173 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:28:09,087 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:28:09,088 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:28:09,088 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:28:09,174 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:28:11,175 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:28:11,477 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:28:13,176 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:28:15,178 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:28:17,178 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:28:17,188 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:28:19,180 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:28:19,218 DEBUG   SenderThread:2320742 [sender.py:send():382] send: stats
+2024-02-07 08:28:21,181 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:28:22,840 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:28:23,182 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:28:24,087 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:28:24,088 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:28:24,088 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:28:25,185 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:28:27,186 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:28:28,067 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:28:29,187 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:28:31,188 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:28:33,142 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:28:33,189 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:28:35,190 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:28:37,191 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:28:39,088 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:28:39,089 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:28:39,090 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:28:39,192 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:28:39,250 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:28:41,195 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:28:43,196 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:28:45,119 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:28:45,197 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:28:47,199 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:28:49,200 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:28:49,226 DEBUG   SenderThread:2320742 [sender.py:send():382] send: stats
+2024-02-07 08:28:50,801 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:28:51,201 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:28:53,203 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:28:54,088 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:28:54,088 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:28:54,089 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:28:55,204 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:28:56,227 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:28:57,205 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:28:59,206 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:29:01,207 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:29:02,188 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:29:03,208 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:29:05,209 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:29:07,210 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:29:07,398 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:29:09,088 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:29:09,089 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:29:09,090 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:29:09,211 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:29:11,212 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:29:13,035 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:29:13,213 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:29:15,214 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:29:17,216 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:29:19,004 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:29:19,217 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:29:19,225 DEBUG   SenderThread:2320742 [sender.py:send():382] send: stats
+2024-02-07 08:29:21,218 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:29:23,219 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:29:24,029 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:29:24,088 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:29:24,088 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:29:24,089 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:29:25,221 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:29:27,222 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:29:29,223 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:29:29,239 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:29:31,224 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:29:33,225 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:29:34,780 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:29:35,227 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:29:37,228 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:29:39,088 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:29:39,089 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:29:39,089 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:29:39,229 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:29:40,705 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:29:41,230 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:29:43,231 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:29:45,232 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:29:46,605 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:29:47,233 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:29:49,226 DEBUG   SenderThread:2320742 [sender.py:send():382] send: stats
+2024-02-07 08:29:49,234 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:29:51,235 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:29:52,323 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:29:53,237 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:29:54,088 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:29:54,089 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:29:54,090 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:29:55,238 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:29:57,243 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:29:57,549 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:29:59,244 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:30:01,245 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:30:03,176 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:30:03,251 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:30:05,253 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:30:07,254 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:30:08,780 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:30:09,088 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:30:09,089 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:30:09,090 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:30:09,256 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:30:11,257 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:30:13,259 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:30:14,769 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:30:15,260 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:30:17,261 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:30:19,232 DEBUG   SenderThread:2320742 [sender.py:send():382] send: stats
+2024-02-07 08:30:19,262 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:30:20,259 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:30:21,262 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:30:23,264 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:30:24,088 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:30:24,089 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:30:24,089 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:30:25,265 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:30:25,626 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:30:27,266 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:30:29,268 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:30:31,269 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:30:31,500 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:30:33,270 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:30:35,272 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:30:36,982 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:30:37,273 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:30:39,088 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:30:39,089 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:30:39,089 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:30:39,274 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:30:41,275 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:30:42,455 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:30:43,276 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:30:45,278 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:30:47,280 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:30:47,604 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:30:49,239 DEBUG   SenderThread:2320742 [sender.py:send():382] send: stats
+2024-02-07 08:30:49,282 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:30:51,283 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:30:53,076 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:30:53,284 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:30:54,089 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:30:54,089 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:30:54,091 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:30:55,285 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:30:57,286 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:30:58,788 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:30:59,287 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:31:01,288 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:31:03,290 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:31:03,833 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:31:05,292 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:31:07,292 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:31:09,089 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:31:09,089 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:31:09,090 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:31:09,268 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:31:09,293 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:31:11,295 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:31:13,295 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:31:14,606 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:31:15,297 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:31:17,298 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:31:19,243 DEBUG   SenderThread:2320742 [sender.py:send():382] send: stats
+2024-02-07 08:31:19,299 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:31:20,454 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:31:21,300 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:31:23,301 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:31:24,089 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:31:24,090 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:31:24,090 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:31:25,303 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:31:25,926 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:31:27,304 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:31:29,305 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:31:31,307 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:31:31,569 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:31:33,308 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:31:35,309 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:31:36,794 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:31:37,310 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:31:39,089 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:31:39,089 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:31:39,090 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:31:39,311 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:31:41,312 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:31:42,621 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:31:43,313 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:31:45,314 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:31:47,315 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:31:47,766 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:31:49,244 DEBUG   SenderThread:2320742 [sender.py:send():382] send: stats
+2024-02-07 08:31:49,317 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:31:51,318 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:31:53,011 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:31:53,319 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:31:54,090 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:31:54,090 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:31:54,091 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:31:55,320 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:31:57,321 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:31:58,703 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:31:59,323 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:32:01,324 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:32:03,325 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:32:03,874 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:32:05,327 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:32:07,328 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:32:09,089 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:32:09,090 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:32:09,090 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:32:09,262 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:32:09,329 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:32:11,330 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:32:13,331 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:32:14,287 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:32:15,332 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:32:17,334 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:32:19,331 DEBUG   SenderThread:2320742 [sender.py:send():382] send: stats
+2024-02-07 08:32:19,332 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:32:19,335 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:32:21,336 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:32:23,337 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:32:24,089 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:32:24,090 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:32:24,090 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:32:24,583 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:32:25,339 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:32:27,340 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:32:29,341 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:32:29,744 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:32:31,348 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:32:33,349 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:32:34,769 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:32:35,350 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:32:37,351 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:32:39,089 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:32:39,090 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:32:39,090 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:32:39,352 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:32:40,210 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:32:41,353 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:32:43,354 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:32:45,244 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:32:45,356 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:32:47,357 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:32:49,334 DEBUG   SenderThread:2320742 [sender.py:send():382] send: stats
+2024-02-07 08:32:49,358 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:32:50,466 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:32:51,359 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:32:53,360 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:32:54,089 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:32:54,090 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:32:54,091 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:32:55,361 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:32:55,541 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:32:57,362 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:32:59,364 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:33:00,921 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:33:01,365 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:33:03,365 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:33:05,367 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:33:06,549 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:33:07,368 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:33:09,089 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:33:09,091 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:33:09,091 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:33:09,369 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:33:11,370 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:33:12,140 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:33:13,371 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:33:15,372 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:33:17,374 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:33:17,640 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:33:19,340 DEBUG   SenderThread:2320742 [sender.py:send():382] send: stats
+2024-02-07 08:33:19,375 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:33:21,376 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:33:22,973 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:33:23,377 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:33:24,090 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:33:24,091 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:33:24,092 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:33:25,378 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:33:27,379 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:33:28,326 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:33:29,381 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:33:31,382 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:33:33,383 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:33:33,512 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:33:35,384 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:33:37,385 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:33:38,595 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:33:39,090 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:33:39,091 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:33:39,092 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:33:39,386 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:33:41,388 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:33:43,389 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:33:44,306 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:33:45,390 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:33:47,391 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:33:49,343 DEBUG   SenderThread:2320742 [sender.py:send():382] send: stats
+2024-02-07 08:33:49,345 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:33:49,392 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:33:51,393 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:33:53,394 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:33:54,090 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:33:54,091 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:33:54,092 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:33:55,229 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:33:55,395 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:33:57,397 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:33:59,398 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:34:00,237 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:34:01,399 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:34:03,400 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:34:05,401 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:34:05,559 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:34:07,403 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:34:09,090 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:34:09,092 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:34:09,092 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:34:09,404 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:34:10,668 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:34:11,405 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:34:13,406 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:34:15,407 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:34:15,715 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:34:17,408 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:34:19,348 DEBUG   SenderThread:2320742 [sender.py:send():382] send: stats
+2024-02-07 08:34:19,409 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:34:21,410 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:34:21,556 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:34:23,411 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:34:24,090 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:34:24,091 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:34:24,091 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:34:25,412 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:34:27,094 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:34:27,413 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:34:29,414 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:34:31,415 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:34:33,003 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:34:33,417 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:34:35,419 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:34:37,419 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:34:38,410 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:34:39,090 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:34:39,091 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:34:39,092 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:34:39,420 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:34:41,422 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:34:43,423 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:34:43,625 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:34:45,423 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:34:47,425 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:34:49,349 DEBUG   SenderThread:2320742 [sender.py:send():382] send: stats
+2024-02-07 08:34:49,349 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:34:49,426 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:34:51,427 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:34:53,428 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:34:54,091 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:34:54,092 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:34:54,093 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:34:55,278 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:34:55,429 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:34:57,430 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:34:59,431 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:35:01,239 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:35:01,433 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:35:03,434 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:35:05,435 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:35:07,034 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:35:07,436 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:35:09,091 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:35:09,092 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:35:09,092 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:35:09,438 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:35:11,440 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:35:12,270 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:35:13,441 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:35:15,442 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:35:17,444 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:35:17,900 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:35:19,350 DEBUG   SenderThread:2320742 [sender.py:send():382] send: stats
+2024-02-07 08:35:19,445 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:35:21,446 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:35:23,447 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:35:23,848 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:35:24,091 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:35:24,092 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:35:24,093 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:35:25,448 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:35:27,449 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:35:29,451 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:35:29,716 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:35:31,451 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:35:33,452 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:35:34,801 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:35:35,454 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:35:37,454 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:35:39,092 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:35:39,092 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:35:39,093 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:35:39,456 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:35:40,572 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:35:41,457 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:35:43,458 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:35:45,459 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:35:46,523 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:35:47,460 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:35:49,354 DEBUG   SenderThread:2320742 [sender.py:send():382] send: stats
+2024-02-07 08:35:49,460 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:35:51,462 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:35:51,930 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:35:53,463 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:35:54,092 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:35:54,092 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:35:54,093 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:35:55,464 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:35:57,465 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:35:57,497 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:35:59,466 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:36:01,467 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:36:02,810 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:36:03,469 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:36:05,470 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:36:07,471 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:36:08,032 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:36:09,091 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:36:09,092 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:36:09,092 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:36:09,472 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:36:11,473 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:36:13,474 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:36:13,582 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:36:15,475 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:36:17,476 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:36:18,605 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:36:19,360 DEBUG   SenderThread:2320742 [sender.py:send():382] send: stats
+2024-02-07 08:36:19,477 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:36:21,479 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:36:23,480 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:36:23,670 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:36:24,092 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:36:24,092 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:36:24,093 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:36:25,481 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:36:27,482 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:36:29,483 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:36:29,580 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:36:31,484 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:36:33,486 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:36:35,020 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:36:35,487 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:36:37,488 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:36:39,092 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:36:39,093 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 08:36:39,094 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 08:36:39,489 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:36:39,532 DEBUG   SenderThread:2320742 [sender.py:send():382] send: exit
+2024-02-07 08:36:39,532 INFO    SenderThread:2320742 [sender.py:send_exit():589] handling exit code: 255
+2024-02-07 08:36:39,533 INFO    SenderThread:2320742 [sender.py:send_exit():591] handling runtime: 770
+2024-02-07 08:36:39,533 INFO    SenderThread:2320742 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-02-07 08:36:39,534 INFO    SenderThread:2320742 [sender.py:send_exit():597] send defer
+2024-02-07 08:36:39,534 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 08:36:39,534 INFO    HandlerThread:2320742 [handler.py:handle_request_defer():172] handle defer: 0
+2024-02-07 08:36:39,534 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: defer
+2024-02-07 08:36:39,534 INFO    SenderThread:2320742 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-02-07 08:36:39,535 INFO    SenderThread:2320742 [sender.py:transition_state():617] send defer: 1
+2024-02-07 08:36:39,535 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 08:36:39,535 INFO    HandlerThread:2320742 [handler.py:handle_request_defer():172] handle defer: 1
+2024-02-07 08:36:39,535 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: defer
+2024-02-07 08:36:39,535 INFO    SenderThread:2320742 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-02-07 08:36:39,535 INFO    SenderThread:2320742 [sender.py:transition_state():617] send defer: 2
+2024-02-07 08:36:39,535 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 08:36:39,536 INFO    HandlerThread:2320742 [handler.py:handle_request_defer():172] handle defer: 2
+2024-02-07 08:36:39,536 INFO    HandlerThread:2320742 [system_monitor.py:finish():203] Stopping system monitor
+2024-02-07 08:36:39,536 DEBUG   SystemMonitor:2320742 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-02-07 08:36:39,537 DEBUG   SystemMonitor:2320742 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-02-07 08:36:39,539 INFO    HandlerThread:2320742 [interfaces.py:finish():202] Joined cpu monitor
+2024-02-07 08:36:39,539 INFO    HandlerThread:2320742 [interfaces.py:finish():202] Joined disk monitor
+2024-02-07 08:36:40,490 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_created():271] file/dir created: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/wandb-summary.json
+2024-02-07 08:36:41,490 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:36:42,357 INFO    HandlerThread:2320742 [interfaces.py:finish():202] Joined gpu monitor
+2024-02-07 08:36:42,358 INFO    HandlerThread:2320742 [interfaces.py:finish():202] Joined memory monitor
+2024-02-07 08:36:42,358 INFO    HandlerThread:2320742 [interfaces.py:finish():202] Joined network monitor
+2024-02-07 08:36:42,358 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-07 08:36:42,360 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:36:42,360 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: defer
+2024-02-07 08:36:42,361 INFO    SenderThread:2320742 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-02-07 08:36:42,361 INFO    SenderThread:2320742 [sender.py:transition_state():617] send defer: 3
+2024-02-07 08:36:42,361 DEBUG   SenderThread:2320742 [sender.py:send():382] send: stats
+2024-02-07 08:36:42,362 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 08:36:42,364 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: poll_exit
+2024-02-07 08:36:42,364 INFO    HandlerThread:2320742 [handler.py:handle_request_defer():172] handle defer: 3
+2024-02-07 08:36:42,365 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: defer
+2024-02-07 08:36:42,365 INFO    SenderThread:2320742 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-02-07 08:36:42,365 INFO    SenderThread:2320742 [sender.py:transition_state():617] send defer: 4
+2024-02-07 08:36:42,366 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 08:36:42,366 INFO    HandlerThread:2320742 [handler.py:handle_request_defer():172] handle defer: 4
+2024-02-07 08:36:42,366 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: defer
+2024-02-07 08:36:42,366 INFO    SenderThread:2320742 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-02-07 08:36:42,366 INFO    SenderThread:2320742 [sender.py:transition_state():617] send defer: 5
+2024-02-07 08:36:42,367 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 08:36:42,367 INFO    HandlerThread:2320742 [handler.py:handle_request_defer():172] handle defer: 5
+2024-02-07 08:36:42,367 DEBUG   SenderThread:2320742 [sender.py:send():382] send: summary
+2024-02-07 08:36:42,368 INFO    SenderThread:2320742 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-02-07 08:36:42,369 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: defer
+2024-02-07 08:36:42,369 INFO    SenderThread:2320742 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-02-07 08:36:42,369 INFO    SenderThread:2320742 [sender.py:transition_state():617] send defer: 6
+2024-02-07 08:36:42,369 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 08:36:42,370 INFO    HandlerThread:2320742 [handler.py:handle_request_defer():172] handle defer: 6
+2024-02-07 08:36:42,370 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: defer
+2024-02-07 08:36:42,370 INFO    SenderThread:2320742 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-02-07 08:36:42,370 INFO    SenderThread:2320742 [sender.py:transition_state():617] send defer: 7
+2024-02-07 08:36:42,370 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 08:36:42,370 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 08:36:42,371 INFO    HandlerThread:2320742 [handler.py:handle_request_defer():172] handle defer: 7
+2024-02-07 08:36:42,371 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: defer
+2024-02-07 08:36:42,371 INFO    SenderThread:2320742 [sender.py:send_request_defer():613] handle sender defer: 7
+2024-02-07 08:36:42,491 INFO    Thread-12 :2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/wandb-summary.json
+2024-02-07 08:36:44,985 INFO    SenderThread:2320742 [sender.py:transition_state():617] send defer: 8
+2024-02-07 08:36:44,986 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 08:36:44,986 INFO    HandlerThread:2320742 [handler.py:handle_request_defer():172] handle defer: 8
+2024-02-07 08:36:44,986 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: defer
+2024-02-07 08:36:44,987 INFO    SenderThread:2320742 [sender.py:send_request_defer():613] handle sender defer: 8
+2024-02-07 08:36:44,987 INFO    SenderThread:2320742 [job_builder.py:build():298] Attempting to build job artifact
+2024-02-07 08:36:44,988 INFO    SenderThread:2320742 [job_builder.py:_get_source_type():428] is repo sourced job
+2024-02-07 08:36:45,011 INFO    SenderThread:2320742 [job_builder.py:build():404] adding wandb-job metadata file
+2024-02-07 08:36:45,016 INFO    SenderThread:2320742 [sender.py:transition_state():617] send defer: 9
+2024-02-07 08:36:45,017 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 08:36:45,017 DEBUG   SenderThread:2320742 [sender.py:send():382] send: artifact
+2024-02-07 08:36:45,017 INFO    HandlerThread:2320742 [handler.py:handle_request_defer():172] handle defer: 9
+2024-02-07 08:36:45,352 INFO    SenderThread:2320742 [sender.py:send_artifact():1470] sent artifact job-https___github.com_matthias-wright_flaxmodels.git_training_resnet_main.py - {'id': 'QXJ0aWZhY3Q6NzE1NzI4MDky', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEzNzcxOTQzNQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NzE1NzI4MDky', 'versionIndex': 0}}}
+2024-02-07 08:36:45,353 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: defer
+2024-02-07 08:36:45,353 INFO    SenderThread:2320742 [sender.py:send_request_defer():613] handle sender defer: 9
+2024-02-07 08:36:45,353 INFO    SenderThread:2320742 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-02-07 08:36:45,492 INFO    SenderThread:2320742 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:36:45,493 INFO    SenderThread:2320742 [dir_watcher.py:finish():388] scan: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files
+2024-02-07 08:36:45,494 INFO    SenderThread:2320742 [dir_watcher.py:finish():402] scan save: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/config.yaml config.yaml
+2024-02-07 08:36:45,494 INFO    SenderThread:2320742 [dir_watcher.py:finish():402] scan save: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/wandb-metadata.json wandb-metadata.json
+2024-02-07 08:36:45,494 INFO    SenderThread:2320742 [dir_watcher.py:finish():402] scan save: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/wandb-summary.json wandb-summary.json
+2024-02-07 08:36:45,494 INFO    SenderThread:2320742 [dir_watcher.py:finish():402] scan save: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/conda-environment.yaml conda-environment.yaml
+2024-02-07 08:36:45,501 INFO    SenderThread:2320742 [dir_watcher.py:finish():402] scan save: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/requirements.txt requirements.txt
+2024-02-07 08:36:45,508 INFO    SenderThread:2320742 [dir_watcher.py:finish():402] scan save: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log output.log
+2024-02-07 08:36:45,511 INFO    SenderThread:2320742 [sender.py:transition_state():617] send defer: 10
+2024-02-07 08:36:45,512 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 08:36:45,515 INFO    HandlerThread:2320742 [handler.py:handle_request_defer():172] handle defer: 10
+2024-02-07 08:36:45,515 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: defer
+2024-02-07 08:36:45,516 INFO    SenderThread:2320742 [sender.py:send_request_defer():613] handle sender defer: 10
+2024-02-07 08:36:45,516 INFO    SenderThread:2320742 [file_pusher.py:finish():175] shutting down file pusher
+2024-02-07 08:36:45,533 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-07 08:36:45,993 INFO    wandb-upload_1:2320742 [upload_job.py:push():131] Uploaded file /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/config.yaml
+2024-02-07 08:36:46,213 INFO    wandb-upload_3:2320742 [upload_job.py:push():131] Uploaded file /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/requirements.txt
+2024-02-07 08:36:46,228 INFO    wandb-upload_0:2320742 [upload_job.py:push():131] Uploaded file /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/wandb-summary.json
+2024-02-07 08:36:46,242 INFO    wandb-upload_2:2320742 [upload_job.py:push():131] Uploaded file /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/conda-environment.yaml
+2024-02-07 08:36:46,313 INFO    wandb-upload_4:2320742 [upload_job.py:push():131] Uploaded file /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/files/output.log
+2024-02-07 08:36:46,514 INFO    Thread-11 (_thread_body):2320742 [sender.py:transition_state():617] send defer: 11
+2024-02-07 08:36:46,515 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 08:36:46,515 INFO    HandlerThread:2320742 [handler.py:handle_request_defer():172] handle defer: 11
+2024-02-07 08:36:46,516 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: defer
+2024-02-07 08:36:46,516 INFO    SenderThread:2320742 [sender.py:send_request_defer():613] handle sender defer: 11
+2024-02-07 08:36:46,516 INFO    SenderThread:2320742 [file_pusher.py:join():181] waiting for file pusher
+2024-02-07 08:36:46,516 INFO    SenderThread:2320742 [sender.py:transition_state():617] send defer: 12
+2024-02-07 08:36:46,517 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 08:36:46,517 INFO    HandlerThread:2320742 [handler.py:handle_request_defer():172] handle defer: 12
+2024-02-07 08:36:46,517 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: defer
+2024-02-07 08:36:46,517 INFO    SenderThread:2320742 [sender.py:send_request_defer():613] handle sender defer: 12
+2024-02-07 08:36:46,517 INFO    SenderThread:2320742 [file_stream.py:finish():595] file stream finish called
+2024-02-07 08:36:46,735 INFO    SenderThread:2320742 [file_stream.py:finish():599] file stream finish is done
+2024-02-07 08:36:46,735 INFO    SenderThread:2320742 [sender.py:transition_state():617] send defer: 13
+2024-02-07 08:36:46,735 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 08:36:46,736 INFO    HandlerThread:2320742 [handler.py:handle_request_defer():172] handle defer: 13
+2024-02-07 08:36:46,736 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: defer
+2024-02-07 08:36:46,736 INFO    SenderThread:2320742 [sender.py:send_request_defer():613] handle sender defer: 13
+2024-02-07 08:36:46,736 INFO    SenderThread:2320742 [sender.py:transition_state():617] send defer: 14
+2024-02-07 08:36:46,737 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 08:36:46,737 DEBUG   SenderThread:2320742 [sender.py:send():382] send: final
+2024-02-07 08:36:46,737 INFO    HandlerThread:2320742 [handler.py:handle_request_defer():172] handle defer: 14
+2024-02-07 08:36:46,737 DEBUG   SenderThread:2320742 [sender.py:send():382] send: footer
+2024-02-07 08:36:46,737 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: defer
+2024-02-07 08:36:46,737 INFO    SenderThread:2320742 [sender.py:send_request_defer():613] handle sender defer: 14
+2024-02-07 08:36:46,738 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-07 08:36:46,738 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: poll_exit
+2024-02-07 08:36:46,739 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: server_info
+2024-02-07 08:36:46,739 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: server_info
+2024-02-07 08:36:46,741 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: get_summary
+2024-02-07 08:36:46,741 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: sampled_history
+2024-02-07 08:36:46,741 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 08:36:46,742 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: job_info
+2024-02-07 08:36:46,808 DEBUG   SenderThread:2320742 [sender.py:send_request():409] send_request: job_info
+2024-02-07 08:36:46,808 INFO    MainThread:2320742 [wandb_run.py:_footer_history_summary_info():3837] rendering history
+2024-02-07 08:36:46,808 INFO    MainThread:2320742 [wandb_run.py:_footer_history_summary_info():3869] rendering summary
+2024-02-07 08:36:46,809 INFO    MainThread:2320742 [wandb_run.py:_footer_sync_info():3796] logging synced files
+2024-02-07 08:36:46,809 DEBUG   HandlerThread:2320742 [handler.py:handle_request():146] handle_request: shutdown
+2024-02-07 08:36:46,809 INFO    HandlerThread:2320742 [handler.py:finish():866] shutting down handler
+2024-02-07 08:36:47,742 INFO    WriterThread:2320742 [datastore.py:close():294] close: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_082348-o5c405zf/run-o5c405zf.wandb
+2024-02-07 08:36:47,808 INFO    SenderThread:2320742 [sender.py:finish():1548] shutting down sender
+2024-02-07 08:36:47,808 INFO    SenderThread:2320742 [file_pusher.py:finish():175] shutting down file pusher
+2024-02-07 08:36:47,808 INFO    SenderThread:2320742 [file_pusher.py:join():181] waiting for file pusher

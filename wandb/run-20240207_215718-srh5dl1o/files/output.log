@@ -1,0 +1,410 @@
+Shape of the first training image: torch.Size([224, 224, 3])
+Shape of the first validation image: torch.Size([224, 224, 3])
+Training dataset size: 5005
+Validation dataset size: 196
+WARNING:absl:Learning rate schedules in ``flax.training`` are effectively deprecated in favor of Optax schedules. Please refer to https://optax.readthedocs.io/en/latest/api.html#optimizer-schedules for alternatives.
+epoch running!!!
+  0%|                                                                                                             | 0/5005 [00:00<?, ?it/s]
+train batch!!!
+
+ 61%|██████████████████████████████████████████████████████████▉                                     | 3072/5005 [00:02<00:01, 1082.45it/s]
+
+6144it [00:05, 1122.46it/s]
+train batch!!!
+
+7680it [00:06, 1144.86it/s]
+
+10752it [00:09, 1218.63it/s]
+train batch!!!
+
+13824it [00:11, 1223.87it/s]
+train batch!!!
+
+15360it [00:12, 1273.16it/s]
+
+18432it [00:15, 1296.25it/s]
+train batch!!!
+
+19968it [00:16, 1261.99it/s]
+
+23040it [00:19, 1213.63it/s]
+train batch!!!
+
+26112it [00:21, 1211.68it/s]
+train batch!!!
+
+27648it [00:22, 1236.45it/s]
+
+30720it [00:25, 1261.60it/s]
+train batch!!!
+
+33792it [00:27, 1270.72it/s]
+train batch!!!
+
+35328it [00:28, 1311.99it/s]
+
+38400it [00:31, 1284.66it/s]
+train batch!!!
+
+41472it [00:33, 1285.27it/s]
+train batch!!!
+
+43008it [00:34, 1323.74it/s]
+
+46080it [00:37, 1246.45it/s]
+train batch!!!
+
+49152it [00:39, 1273.44it/s]
+train batch!!!
+
+50688it [00:40, 1260.93it/s]
+
+53760it [00:43, 1251.69it/s]
+train batch!!!
+
+56832it [00:45, 1312.74it/s]
+train batch!!!
+
+58368it [00:46, 1310.78it/s]
+
+61440it [00:49, 1266.63it/s]
+train batch!!!
+
+64512it [00:51, 1282.94it/s]
+train batch!!!
+
+66048it [00:52, 1295.00it/s]
+
+69120it [00:55, 1288.86it/s]
+train batch!!!
+
+72192it [00:57, 1273.62it/s]
+train batch!!!
+
+73728it [00:58, 1251.21it/s]
+
+76800it [01:01, 1298.04it/s]
+train batch!!!
+
+79872it [01:03, 1282.39it/s]
+train batch!!!
+
+81408it [01:04, 1284.91it/s]
+
+84480it [01:07, 1263.71it/s]
+train batch!!!
+
+87552it [01:09, 1270.71it/s]
+train batch!!!
+
+89088it [01:10, 1273.07it/s]
+train batch!!!
+
+92160it [01:13, 1226.94it/s]
+
+93696it [01:14, 1213.55it/s]
+train batch!!!
+
+96768it [01:17, 1227.93it/s]
+
+99840it [01:19, 1234.43it/s]
+train batch!!!
+
+101376it [01:20, 1231.77it/s]
+train batch!!!
+
+104448it [01:23, 1235.81it/s]
+
+107520it [01:25, 1265.41it/s]
+train batch!!!
+
+109056it [01:26, 1290.93it/s]
+train batch!!!
+
+112128it [01:29, 1296.08it/s]
+train batch!!!
+
+115200it [01:31, 1326.62it/s]
+
+116736it [01:32, 1331.97it/s]
+train batch!!!
+
+119808it [01:34, 1318.00it/s]
+
+122880it [01:37, 1237.46it/s]
+train batch!!!
+
+125952it [01:39, 1305.51it/s]
+train batch!!!
+
+127488it [01:40, 1318.99it/s]
+train batch!!!
+
+130560it [01:43, 1294.68it/s]
+
+133632it [01:45, 1262.03it/s]
+train batch!!!
+
+135168it [01:46, 1272.26it/s]
+train batch!!!
+
+138240it [01:49, 1265.85it/s]
+
+139776it [01:50, 1267.18it/s]
+train batch!!!
+
+142848it [01:53, 1271.85it/s]
+train batch!!!
+
+145920it [01:55, 1289.53it/s]
+
+148992it [01:57, 1326.99it/s]
+train batch!!!
+
+150528it [01:58, 1321.10it/s]
+train batch!!!
+
+153600it [02:01, 1306.99it/s]
+
+156672it [02:03, 1277.41it/s]
+train batch!!!
+
+158208it [02:04, 1297.41it/s]
+train batch!!!
+
+161280it [02:07, 1305.63it/s]
+train batch!!!
+
+164352it [02:09, 1314.88it/s]
+
+165888it [02:10, 1301.76it/s]
+train batch!!!
+
+168960it [02:13, 1269.53it/s]
+
+172032it [02:15, 1242.06it/s]
+train batch!!!
+
+173568it [02:16, 1255.75it/s]
+train batch!!!
+
+176640it [02:19, 1250.97it/s]
+
+178176it [02:20, 1200.33it/s]
+train batch!!!
+
+181248it [02:23, 1230.33it/s]
+train batch!!!
+
+184320it [02:25, 1273.09it/s]
+
+185856it [02:26, 1273.86it/s]
+train batch!!!
+
+188928it [02:29, 1291.63it/s]
+train batch!!!
+
+192000it [02:31, 1301.36it/s]
+
+195072it [02:33, 1324.35it/s]
+train batch!!!
+
+196608it [02:35, 1274.45it/s]
+train batch!!!
+
+199680it [02:37, 1324.19it/s]
+
+202752it [02:39, 1308.74it/s]
+train batch!!!
+
+204288it [02:40, 1312.82it/s]
+train batch!!!
+
+207360it [02:43, 1292.43it/s]
+train batch!!!
+
+210432it [02:45, 1307.55it/s]
+
+211968it [02:46, 1297.19it/s]
+train batch!!!
+
+215040it [02:49, 1226.59it/s]
+
+216576it [02:50, 1185.63it/s]
+train batch!!!
+
+219648it [02:53, 1193.64it/s]
+
+221184it [02:54, 1196.68it/s]
+train batch!!!
+
+224256it [02:57, 1207.24it/s]
+train batch!!!
+
+227328it [02:59, 1255.30it/s]
+
+228864it [03:00, 1265.48it/s]
+train batch!!!
+
+231936it [03:03, 1260.12it/s]
+
+235008it [03:05, 1256.34it/s]
+train batch!!!
+
+236544it [03:06, 1273.47it/s]
+train batch!!!
+
+239616it [03:09, 1260.84it/s]
+
+242688it [03:11, 1264.59it/s]
+train batch!!!
+
+244224it [03:13, 1209.83it/s]
+
+247296it [03:15, 1190.34it/s]
+train batch!!!
+
+248832it [03:16, 1207.39it/s]
+train batch!!!
+
+251904it [03:19, 1211.10it/s]
+
+253440it [03:20, 1246.37it/s]
+train batch!!!
+
+256512it [03:23, 1255.48it/s]
+train batch!!!
+
+259584it [03:25, 1284.26it/s]
+
+262656it [03:27, 1330.86it/s]
+train batch!!!
+
+264192it [03:28, 1308.56it/s]
+train batch!!!
+
+267264it [03:31, 1299.04it/s]
+train batch!!!
+
+270336it [03:33, 1317.45it/s]
+
+271872it [03:34, 1291.57it/s]
+train batch!!!
+
+274944it [03:37, 1249.74it/s]
+
+276480it [03:38, 1172.70it/s]
+train batch!!!
+
+279552it [03:41, 1185.38it/s]
+
+282624it [03:43, 1224.46it/s]
+train batch!!!
+
+284160it [03:44, 1268.06it/s]
+train batch!!!
+
+287232it [03:47, 1280.73it/s]
+
+290304it [03:49, 1294.63it/s]
+train batch!!!
+
+291840it [03:50, 1315.06it/s]
+train batch!!!
+
+294912it [03:53, 1213.46it/s]
+
+297984it [03:55, 1239.83it/s]
+train batch!!!
+
+299520it [03:57, 1240.50it/s]
+train batch!!!
+
+302592it [03:59, 1289.14it/s]
+
+304128it [04:00, 1227.24it/s]
+train batch!!!
+
+307200it [04:03, 1234.84it/s]
+train batch!!!
+
+310272it [04:05, 1275.44it/s]
+
+311808it [04:07, 1190.45it/s]
+train batch!!!
+
+314880it [04:09, 1207.28it/s]
+
+317952it [04:11, 1267.52it/s]
+train batch!!!
+
+319488it [04:13, 1293.32it/s]
+
+322560it [04:15, 1281.00it/s]
+train batch!!!
+
+325632it [04:17, 1324.06it/s]
+train batch!!!
+
+327168it [04:18, 1327.13it/s]
+
+330240it [04:21, 1292.28it/s]
+train batch!!!
+
+333312it [04:23, 1280.69it/s]
+train batch!!!
+
+334848it [04:24, 1281.10it/s]
+
+337920it [04:27, 1307.09it/s]
+train batch!!!
+
+340992it [04:29, 1235.24it/s]
+train batch!!!
+
+342528it [04:31, 1197.54it/s]
+
+345600it [04:33, 1246.72it/s]
+train batch!!!
+
+347136it [04:34, 1275.21it/s]
+train batch!!!
+
+350208it [04:37, 1256.95it/s]
+
+353280it [04:39, 1264.71it/s]
+train batch!!!
+
+356352it [04:41, 1322.87it/s]
+train batch!!!
+
+357888it [04:42, 1325.33it/s]
+
+360960it [04:45, 1306.64it/s]
+train batch!!!
+364032it [04:47, 1334.57it/s]Traceback (most recent call last):
+  File "/home/alishbaimran/projects/flaxmodels/training/resnet/main.py", line 44, in <module>
+    main()
+  File "/home/alishbaimran/projects/flaxmodels/training/resnet/main.py", line 40, in main
+    training.train_and_evaluate(args)
+  File "/home/alishbaimran/projects/flaxmodels/training/resnet/training.py", line 324, in train_and_evaluate
+    for batch in ds_train:
+  File "/home/alishbaimran/miniconda3/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 633, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "/home/alishbaimran/miniconda3/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 1328, in _next_data
+    idx, data = self._get_data()
+                ^^^^^^^^^^^^^^^^
+  File "/home/alishbaimran/miniconda3/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 1284, in _get_data
+    success, data = self._try_get_data()
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alishbaimran/miniconda3/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 1132, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alishbaimran/miniconda3/lib/python3.11/queue.py", line 180, in get
+    self.not_empty.wait(remaining)
+  File "/home/alishbaimran/miniconda3/lib/python3.11/threading.py", line 324, in wait
+    gotit = waiter.acquire(True, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+train batch!!!

@@ -1,0 +1,30 @@
+Shape of the first training image: torch.Size([224, 224, 3])
+Shape of the first validation image: torch.Size([224, 224, 3])
+WARNING:absl:Learning rate schedules in ``flax.training`` are effectively deprecated in favor of Optax schedules. Please refer to https://optax.readthedocs.io/en/latest/api.html#optimizer-schedules for alternatives.
+Traceback (most recent call last):
+  File "/home/alishbaimran/projects/flaxmodels/training/resnet/main.py", line 44, in <module>
+    main()
+  File "/home/alishbaimran/projects/flaxmodels/training/resnet/main.py", line 40, in main
+    training.train_and_evaluate(args)
+  File "/home/alishbaimran/projects/flaxmodels/training/resnet/training.py", line 296, in train_and_evaluate
+    state = flax.jax_utils.replicate(state)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alishbaimran/miniconda3/lib/python3.11/site-packages/flax/jax_utils.py", line 45, in replicate
+    return jax.device_put_replicated(tree, devices)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alishbaimran/miniconda3/lib/python3.11/site-packages/jax/_src/api.py", line 2658, in device_put_replicated
+    return tree_map(_device_put_replicated, x)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alishbaimran/miniconda3/lib/python3.11/site-packages/jax/_src/tree_util.py", line 244, in tree_map
+    return treedef.unflatten(f(*xs) for xs in zip(*all_leaves))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alishbaimran/miniconda3/lib/python3.11/site-packages/jax/_src/tree_util.py", line 244, in <genexpr>
+    return treedef.unflatten(f(*xs) for xs in zip(*all_leaves))
+                             ^^^^^^
+  File "/home/alishbaimran/miniconda3/lib/python3.11/site-packages/jax/_src/api.py", line 2655, in _device_put_replicated
+    return pxla.batched_device_put(aval, sharding, [buf] * len(devices), devices)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alishbaimran/miniconda3/lib/python3.11/site-packages/jax/_src/interpreters/pxla.py", line 192, in batched_device_put
+    return xc.batched_device_put(aval, sharding, xs, devices, committed)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+jaxlib.xla_extension.XlaRuntimeError: RESOURCE_EXHAUSTED: Out of memory while trying to allocate 4194304 bytes.

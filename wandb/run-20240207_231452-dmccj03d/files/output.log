@@ -1,0 +1,52 @@
+Shape of the first training image: torch.Size([224, 224, 3])
+Shape of the first validation image: torch.Size([224, 224, 3])
+Training dataset size: 1281167
+Validation dataset size: 50000
+WARNING:absl:Learning rate schedules in ``flax.training`` are effectively deprecated in favor of Optax schedules. Please refer to https://optax.readthedocs.io/en/latest/api.html#optimizer-schedules for alternatives.
+  0%|                                                                                                          | 0/1281167 [00:00<?, ?it/s]
+
+  0%|                                                                                              | 1536/1281167 [00:01<22:26, 950.62it/s]
+
+  0%|▏                                                                                            | 3072/1281167 [00:03<20:47, 1024.84it/s]
+train batch!!!
+
+  0%|▍                                                                                            | 6144/1281167 [00:05<19:16, 1102.78it/s]
+
+  1%|▋                                                                                            | 9216/1281167 [00:07<17:09, 1235.15it/s]
+train batch!!!
+
+  1%|▊                                                                                           | 10752/1281167 [00:09<17:15, 1227.43it/s]
+train batch!!!
+
+  1%|▉                                                                                           | 13824/1281167 [00:11<16:47, 1258.33it/s]
+
+  1%|█▏                                                                                          | 16896/1281167 [00:14<16:43, 1260.23it/s]
+train batch!!!
+
+  1%|█▎                                                                                          | 18432/1281167 [00:15<17:43, 1187.39it/s]
+  2%|█▍                                                                                          | 19968/1281167 [00:16<17:20, 1212.15it/s]Traceback (most recent call last):
+  File "/home/alishbaimran/projects/flaxmodels/training/resnet/main.py", line 44, in <module>
+    main()
+  File "/home/alishbaimran/projects/flaxmodels/training/resnet/main.py", line 40, in main
+    training.train_and_evaluate(args)
+  File "/home/alishbaimran/projects/flaxmodels/training/resnet/training.py", line 324, in train_and_evaluate
+    for batch in ds_train:
+  File "/home/alishbaimran/miniconda3/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 633, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "/home/alishbaimran/miniconda3/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 1328, in _next_data
+    idx, data = self._get_data()
+                ^^^^^^^^^^^^^^^^
+  File "/home/alishbaimran/miniconda3/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 1284, in _get_data
+    success, data = self._try_get_data()
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alishbaimran/miniconda3/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 1132, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alishbaimran/miniconda3/lib/python3.11/queue.py", line 180, in get
+    self.not_empty.wait(remaining)
+  File "/home/alishbaimran/miniconda3/lib/python3.11/threading.py", line 324, in wait
+    gotit = waiter.acquire(True, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+train batch!!!

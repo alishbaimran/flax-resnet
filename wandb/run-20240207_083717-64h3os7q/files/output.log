@@ -1,0 +1,114 @@
+Shape of the first training image: torch.Size([224, 224, 3])
+Shape of the first validation image: torch.Size([224, 224, 3])
+Training dataset size: 1281167
+Validation dataset size: 50000
+WARNING:absl:Learning rate schedules in ``flax.training`` are effectively deprecated in favor of Optax schedules. Please refer to https://optax.readthedocs.io/en/latest/api.html#optimizer-schedules for alternatives.
+  0%|                                                                                                                      | 0/1281167 [00:00<?, ?it/s]
+
+  0%|▏                                                                                                         | 1536/1281167 [00:01<23:32, 906.09it/s]
+
+  0%|▎                                                                                                         | 3072/1281167 [00:03<22:40, 939.26it/s]
+
+  0%|▌                                                                                                        | 6144/1281167 [00:06<20:21, 1043.74it/s]
+train batch!!!
+
+  1%|▋                                                                                                        | 7680/1281167 [00:07<20:00, 1060.48it/s]
+
+  1%|▊                                                                                                        | 9216/1281167 [00:09<20:14, 1047.02it/s]
+
+  1%|▉                                                                                                       | 12288/1281167 [00:12<20:27, 1033.87it/s]
+train batch!!!
+
+  1%|█                                                                                                       | 13824/1281167 [00:13<20:01, 1054.58it/s]
+
+  1%|█▎                                                                                                      | 16896/1281167 [00:16<19:54, 1058.84it/s]
+
+  1%|█▍                                                                                                      | 18432/1281167 [00:17<19:10, 1097.45it/s]
+train batch!!!
+
+  2%|█▌                                                                                                      | 19968/1281167 [00:19<19:30, 1077.61it/s]
+
+  2%|█▊                                                                                                      | 23040/1281167 [00:22<20:18, 1032.18it/s]
+train batch!!!
+
+  2%|█▉                                                                                                      | 24576/1281167 [00:23<20:15, 1033.74it/s]
+
+  2%|██                                                                                                      | 26112/1281167 [00:25<20:08, 1038.57it/s]
+
+  2%|██▎                                                                                                     | 29184/1281167 [00:28<19:59, 1043.51it/s]
+train batch!!!
+
+  2%|██▍                                                                                                     | 30720/1281167 [00:29<20:29, 1016.82it/s]
+
+  3%|██▌                                                                                                     | 32256/1281167 [00:31<20:39, 1007.97it/s]
+
+  3%|██▊                                                                                                     | 35328/1281167 [00:33<19:21, 1072.96it/s]
+train batch!!!
+
+  3%|██▉                                                                                                     | 36864/1281167 [00:35<19:08, 1083.12it/s]
+
+  3%|███▏                                                                                                     | 38400/1281167 [00:37<20:46, 996.91it/s]
+
+  3%|███▍                                                                                                     | 41472/1281167 [00:40<21:17, 970.42it/s]
+
+  3%|███▍                                                                                                    | 43008/1281167 [00:41<20:09, 1024.02it/s]
+train batch!!!
+
+  3%|███▌                                                                                                    | 44544/1281167 [00:43<19:49, 1039.78it/s]
+
+  4%|███▉                                                                                                     | 47616/1281167 [00:46<20:34, 999.55it/s]
+
+  4%|████                                                                                                     | 49152/1281167 [00:47<20:35, 997.06it/s]
+train batch!!!
+
+  4%|████▏                                                                                                    | 50688/1281167 [00:49<20:34, 996.76it/s]
+
+  4%|████▎                                                                                                   | 53760/1281167 [00:51<18:56, 1080.31it/s]
+train batch!!!
+
+  4%|████▍                                                                                                   | 55296/1281167 [00:53<17:51, 1143.89it/s]
+
+  5%|████▋                                                                                                   | 58368/1281167 [00:56<20:07, 1012.78it/s]
+
+  5%|████▊                                                                                                   | 59904/1281167 [00:57<19:37, 1037.29it/s]
+train batch!!!
+
+  5%|████▉                                                                                                   | 61440/1281167 [00:59<19:07, 1063.22it/s]
+
+  5%|█████▏                                                                                                  | 64512/1281167 [01:02<20:05, 1009.49it/s]
+
+  5%|█████▍                                                                                                   | 66048/1281167 [01:03<20:36, 982.49it/s]
+train batch!!!
+
+  5%|█████▍                                                                                                  | 67584/1281167 [01:05<20:13, 1000.11it/s]
+
+  6%|█████▋                                                                                                  | 70656/1281167 [01:08<19:00, 1061.21it/s]
+train batch!!!
+
+  6%|█████▊                                                                                                  | 72192/1281167 [01:09<18:57, 1062.77it/s]
+  6%|█████▉                                                                                                  | 73728/1281167 [01:10<18:19, 1098.36it/s]Traceback (most recent call last):
+  File "/home/alishbaimran/projects/flaxmodels/training/resnet/main.py", line 44, in <module>
+    main()
+  File "/home/alishbaimran/projects/flaxmodels/training/resnet/main.py", line 40, in main
+    training.train_and_evaluate(args)
+  File "/home/alishbaimran/projects/flaxmodels/training/resnet/training.py", line 322, in train_and_evaluate
+    for batch in ds_train:
+  File "/home/alishbaimran/miniconda3/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 633, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "/home/alishbaimran/miniconda3/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 1328, in _next_data
+    idx, data = self._get_data()
+                ^^^^^^^^^^^^^^^^
+  File "/home/alishbaimran/miniconda3/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 1284, in _get_data
+    success, data = self._try_get_data()
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alishbaimran/miniconda3/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 1132, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alishbaimran/miniconda3/lib/python3.11/queue.py", line 180, in get
+    self.not_empty.wait(remaining)
+  File "/home/alishbaimran/miniconda3/lib/python3.11/threading.py", line 324, in wait
+    gotit = waiter.acquire(True, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+train batch!!!

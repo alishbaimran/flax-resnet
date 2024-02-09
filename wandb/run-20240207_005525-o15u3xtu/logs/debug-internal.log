@@ -1,0 +1,213 @@
+2024-02-07 00:55:25,496 INFO    StreamThr :301056 [internal.py:wandb_internal():86] W&B internal server running at pid: 301056, started at: 2024-02-07 00:55:25.469575
+2024-02-07 00:55:25,538 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: status
+2024-02-07 00:55:25,554 INFO    WriterThread:301056 [datastore.py:open_for_write():85] open: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_005525-o15u3xtu/run-o15u3xtu.wandb
+2024-02-07 00:55:25,561 DEBUG   SenderThread:301056 [sender.py:send():382] send: header
+2024-02-07 00:55:25,562 DEBUG   SenderThread:301056 [sender.py:send():382] send: run
+2024-02-07 00:55:25,810 INFO    SenderThread:301056 [dir_watcher.py:__init__():211] watching files in: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_005525-o15u3xtu/files
+2024-02-07 00:55:25,810 INFO    SenderThread:301056 [sender.py:_start_run_threads():1136] run started: o15u3xtu with start time 1707267325.469652
+2024-02-07 00:55:25,826 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: check_version
+2024-02-07 00:55:25,827 DEBUG   SenderThread:301056 [sender.py:send_request():409] send_request: check_version
+2024-02-07 00:55:25,982 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: run_start
+2024-02-07 00:55:26,050 DEBUG   HandlerThread:301056 [system_info.py:__init__():32] System info init
+2024-02-07 00:55:26,051 DEBUG   HandlerThread:301056 [system_info.py:__init__():47] System info init done
+2024-02-07 00:55:26,051 INFO    HandlerThread:301056 [system_monitor.py:start():194] Starting system monitor
+2024-02-07 00:55:26,059 INFO    SystemMonitor:301056 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-02-07 00:55:26,061 INFO    HandlerThread:301056 [system_monitor.py:probe():214] Collecting system info
+2024-02-07 00:55:26,093 INFO    SystemMonitor:301056 [interfaces.py:start():190] Started cpu monitoring
+2024-02-07 00:55:26,103 INFO    SystemMonitor:301056 [interfaces.py:start():190] Started disk monitoring
+2024-02-07 00:55:26,119 INFO    SystemMonitor:301056 [interfaces.py:start():190] Started gpu monitoring
+2024-02-07 00:55:26,138 INFO    SystemMonitor:301056 [interfaces.py:start():190] Started memory monitoring
+2024-02-07 00:55:26,139 INFO    SystemMonitor:301056 [interfaces.py:start():190] Started network monitoring
+2024-02-07 00:55:26,285 DEBUG   HandlerThread:301056 [system_info.py:probe():196] Probing system
+2024-02-07 00:55:26,305 DEBUG   HandlerThread:301056 [system_info.py:_probe_git():181] Probing git
+2024-02-07 00:55:26,381 DEBUG   HandlerThread:301056 [system_info.py:_probe_git():189] Probing git done
+2024-02-07 00:55:26,381 DEBUG   HandlerThread:301056 [system_info.py:probe():244] Probing system done
+2024-02-07 00:55:26,381 DEBUG   HandlerThread:301056 [system_monitor.py:probe():223] {'os': 'Linux-6.5.0-4-amd64-x86_64-with-glibc2.35', 'python': '3.11.5', 'heartbeatAt': '2024-02-07T00:55:26.286146', 'startedAt': '2024-02-07T00:55:25.451427', 'docker': None, 'cuda': None, 'args': ('--wandb',), 'state': 'running', 'program': '/home/alishbaimran/projects/flaxmodels/training/resnet/main.py', 'codePathLocal': 'main.py', 'codePath': 'training/resnet/main.py', 'git': {'remote': 'https://github.com/matthias-wright/flaxmodels.git', 'commit': '600ce8a6b6bf2926ccfc948e7c1ff35edc330d5b'}, 'email': 'alishbai734@gmail.com', 'root': '/home/alishbaimran/projects/flaxmodels', 'host': 'pabamd3', 'username': 'alishbaimran', 'executable': '/home/alishbaimran/miniconda3/bin/python', 'cpu_count': 128, 'cpu_count_logical': 256, 'cpu_freq': {'current': 3241.14691796875, 'min': 1500.0, 'max': 2250.0}, 'cpu_freq_per_core': [{'current': 3250.831, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.824, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.81, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.571, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.527, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.099, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.427, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.305, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.562, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.562, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.567, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.572, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.368, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.367, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.37, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.617, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.735, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.74, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.945, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.633, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.359, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.611, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.358, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.621, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.813, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.568, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.562, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.82, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.598, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.627, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.605, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.608, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.8, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.82, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.815, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.815, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.529, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.526, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.277, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.279, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.806, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.812, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.813, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.807, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.614, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.758, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.612, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.757, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.554, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.728, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.802, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.793, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.606, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.596, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.342, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.609, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.798, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.801, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.788, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.543, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.584, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.337, 'min': 1500.0, 'max': 2250.0}, {'current': 3242.661, 'min': 1500.0, 'max': 2250.0}, {'current': 3242.41, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.745, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.736, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.753, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.737, 'min': 1500.0, 'max': 2250.0}, {'current': 3218.456, 'min': 1500.0, 'max': 2250.0}, {'current': 3218.455, 'min': 1500.0, 'max': 2250.0}, {'current': 3218.448, 'min': 1500.0, 'max': 2250.0}, {'current': 3218.438, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.731, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.74, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.725, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.726, 'min': 1500.0, 'max': 2250.0}, {'current': 3218.47, 'min': 1500.0, 'max': 2250.0}, {'current': 3218.203, 'min': 1500.0, 'max': 2250.0}, {'current': 3218.452, 'min': 1500.0, 'max': 2250.0}, {'current': 3218.476, 'min': 1500.0, 'max': 2250.0}, {'current': 3213.45, 'min': 1500.0, 'max': 2250.0}, {'current': 3213.432, 'min': 1500.0, 'max': 2250.0}, {'current': 3213.716, 'min': 1500.0, 'max': 2250.0}, {'current': 3213.388, 'min': 1500.0, 'max': 2250.0}, {'current': 3218.472, 'min': 1500.0, 'max': 2250.0}, {'current': 3218.472, 'min': 1500.0, 'max': 2250.0}, {'current': 3218.466, 'min': 1500.0, 'max': 2250.0}, {'current': 3218.46, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.746, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.485, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.749, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.743, 'min': 1500.0, 'max': 2250.0}, {'current': 3218.46, 'min': 1500.0, 'max': 2250.0}, {'current': 3218.467, 'min': 1500.0, 'max': 2250.0}, {'current': 3218.39, 'min': 1500.0, 'max': 2250.0}, {'current': 3218.46, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.696, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.7, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.703, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.696, 'min': 1500.0, 'max': 2250.0}, {'current': 3218.441, 'min': 1500.0, 'max': 2250.0}, {'current': 3218.457, 'min': 1500.0, 'max': 2250.0}, {'current': 3218.451, 'min': 1500.0, 'max': 2250.0}, {'current': 3218.455, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.741, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.745, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.658, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.747, 'min': 1500.0, 'max': 2250.0}, {'current': 3218.384, 'min': 1500.0, 'max': 2250.0}, {'current': 3218.468, 'min': 1500.0, 'max': 2250.0}, {'current': 3218.469, 'min': 1500.0, 'max': 2250.0}, {'current': 3218.467, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.704, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.457, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.709, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.709, 'min': 1500.0, 'max': 2250.0}, {'current': 3218.511, 'min': 1500.0, 'max': 2250.0}, {'current': 3218.508, 'min': 1500.0, 'max': 2250.0}, {'current': 3218.428, 'min': 1500.0, 'max': 2250.0}, {'current': 3218.495, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.756, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.753, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.763, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.758, 'min': 1500.0, 'max': 2250.0}, {'current': 3218.476, 'min': 1500.0, 'max': 2250.0}, {'current': 3218.477, 'min': 1500.0, 'max': 2250.0}, {'current': 3218.485, 'min': 1500.0, 'max': 2250.0}, {'current': 3218.235, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.247, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.247, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.004, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.008, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.155, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.696, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.447, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.419, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.251, 'min': 1500.0, 'max': 2250.0}, {'current': 3245.988, 'min': 1500.0, 'max': 2250.0}, {'current': 3245.977, 'min': 1500.0, 'max': 2250.0}, {'current': 3250.582, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.448, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.368, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.447, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.64, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.261, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.262, 'min': 1500.0, 'max': 2250.0}, {'current': 3245.749, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.171, 'min': 1500.0, 'max': 2250.0}, {'current': 3242.382, 'min': 1500.0, 'max': 2250.0}, {'current': 3242.634, 'min': 1500.0, 'max': 2250.0}, {'current': 3242.378, 'min': 1500.0, 'max': 2250.0}, {'current': 3242.63, 'min': 1500.0, 'max': 2250.0}, {'current': 3245.991, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.251, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.229, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.246, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.479, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.703, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.705, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.689, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.261, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.018, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.259, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.173, 'min': 1500.0, 'max': 2250.0}, {'current': 3238.579, 'min': 1500.0, 'max': 2250.0}, {'current': 3238.623, 'min': 1500.0, 'max': 2250.0}, {'current': 3238.595, 'min': 1500.0, 'max': 2250.0}, {'current': 3238.325, 'min': 1500.0, 'max': 2250.0}, {'current': 3242.282, 'min': 1500.0, 'max': 2250.0}, {'current': 3242.202, 'min': 1500.0, 'max': 2250.0}, {'current': 3242.161, 'min': 1500.0, 'max': 2250.0}, {'current': 3242.105, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.71, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.705, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.667, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.688, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.392, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.324, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.274, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.278, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.788, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.721, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.727, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.701, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.276, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.427, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.275, 'min': 1500.0, 'max': 2250.0}, {'current': 3246.205, 'min': 1500.0, 'max': 2250.0}, {'current': 3242.239, 'min': 1500.0, 'max': 2250.0}, {'current': 3242.397, 'min': 1500.0, 'max': 2250.0}, {'current': 3242.671, 'min': 1500.0, 'max': 2250.0}, {'current': 3242.412, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.749, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.735, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.673, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.743, 'min': 1500.0, 'max': 2250.0}, {'current': 3218.46, 'min': 1500.0, 'max': 2250.0}, {'current': 3218.455, 'min': 1500.0, 'max': 2250.0}, {'current': 3218.45, 'min': 1500.0, 'max': 2250.0}, {'current': 3218.429, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.748, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.738, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.726, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.751, 'min': 1500.0, 'max': 2250.0}, {'current': 3218.401, 'min': 1500.0, 'max': 2250.0}, {'current': 3218.197, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.832, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.665, 'min': 1500.0, 'max': 2250.0}, {'current': 3216.934, 'min': 1500.0, 'max': 2250.0}, {'current': 3216.958, 'min': 1500.0, 'max': 2250.0}, {'current': 3216.955, 'min': 1500.0, 'max': 2250.0}, {'current': 3216.995, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.687, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.678, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.672, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.686, 'min': 1500.0, 'max': 2250.0}, {'current': 3216.946, 'min': 1500.0, 'max': 2250.0}, {'current': 3216.949, 'min': 1500.0, 'max': 2250.0}, {'current': 3216.96, 'min': 1500.0, 'max': 2250.0}, {'current': 3216.951, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.676, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.68, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.682, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.684, 'min': 1500.0, 'max': 2250.0}, {'current': 3216.923, 'min': 1500.0, 'max': 2250.0}, {'current': 3216.921, 'min': 1500.0, 'max': 2250.0}, {'current': 3216.928, 'min': 1500.0, 'max': 2250.0}, {'current': 3216.913, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.676, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.662, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.67, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.668, 'min': 1500.0, 'max': 2250.0}, {'current': 3216.712, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.04, 'min': 1500.0, 'max': 2250.0}, {'current': 3216.974, 'min': 1500.0, 'max': 2250.0}, {'current': 3216.964, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.689, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.681, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.753, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.428, 'min': 1500.0, 'max': 2250.0}, {'current': 3216.915, 'min': 1500.0, 'max': 2250.0}, {'current': 3216.904, 'min': 1500.0, 'max': 2250.0}, {'current': 3216.928, 'min': 1500.0, 'max': 2250.0}, {'current': 3216.92, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.694, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.39, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.69, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.696, 'min': 1500.0, 'max': 2250.0}, {'current': 3216.983, 'min': 1500.0, 'max': 2250.0}, {'current': 3216.979, 'min': 1500.0, 'max': 2250.0}, {'current': 3218.244, 'min': 1500.0, 'max': 2250.0}, {'current': 3216.985, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.685, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.686, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.853, 'min': 1500.0, 'max': 2250.0}, {'current': 3217.69, 'min': 1500.0, 'max': 2250.0}], 'disk': {'/': {'total': 118.194091796875, 'used': 20.7305908203125}}, 'gpu': 'NVIDIA GeForce RTX 2080 Ti', 'gpu_count': 8, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}], 'memory': {'total': 1007.6592292785645}}
+2024-02-07 00:55:26,381 INFO    HandlerThread:301056 [system_monitor.py:probe():224] Finished collecting system info
+2024-02-07 00:55:26,381 INFO    HandlerThread:301056 [system_monitor.py:probe():227] Publishing system info
+2024-02-07 00:55:26,381 DEBUG   HandlerThread:301056 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2024-02-07 00:55:26,382 DEBUG   HandlerThread:301056 [system_info.py:_save_pip():68] Saving pip packages done
+2024-02-07 00:55:26,382 DEBUG   HandlerThread:301056 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2024-02-07 00:55:26,809 INFO    Thread-12 :301056 [dir_watcher.py:_on_file_created():271] file/dir created: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_005525-o15u3xtu/files/requirements.txt
+2024-02-07 00:55:26,810 INFO    Thread-12 :301056 [dir_watcher.py:_on_file_created():271] file/dir created: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_005525-o15u3xtu/files/conda-environment.yaml
+2024-02-07 00:55:29,810 INFO    Thread-12 :301056 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_005525-o15u3xtu/files/conda-environment.yaml
+2024-02-07 00:55:29,902 DEBUG   HandlerThread:301056 [system_info.py:_save_conda():87] Saving conda packages done
+2024-02-07 00:55:29,920 INFO    HandlerThread:301056 [system_monitor.py:probe():229] Finished publishing system info
+2024-02-07 00:55:29,945 DEBUG   SenderThread:301056 [sender.py:send():382] send: files
+2024-02-07 00:55:29,945 INFO    SenderThread:301056 [sender.py:_save_file():1392] saving file wandb-metadata.json with policy now
+2024-02-07 00:55:29,971 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 00:55:29,971 DEBUG   SenderThread:301056 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 00:55:30,012 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 00:55:30,186 DEBUG   SenderThread:301056 [sender.py:send():382] send: telemetry
+2024-02-07 00:55:30,384 INFO    wandb-upload_0:301056 [upload_job.py:push():131] Uploaded file /tmp/tmp_ugogn_bwandb/aj1rqotf-wandb-metadata.json
+2024-02-07 00:55:30,812 INFO    Thread-12 :301056 [dir_watcher.py:_on_file_created():271] file/dir created: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_005525-o15u3xtu/files/wandb-metadata.json
+2024-02-07 00:55:31,188 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 00:55:36,189 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 00:55:41,189 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 00:55:42,830 INFO    Thread-12 :301056 [dir_watcher.py:_on_file_created():271] file/dir created: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_005525-o15u3xtu/files/output.log
+2024-02-07 00:55:44,836 INFO    Thread-12 :301056 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_005525-o15u3xtu/files/output.log
+2024-02-07 00:55:44,952 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 00:55:44,952 DEBUG   SenderThread:301056 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 00:55:44,974 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 00:55:47,124 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 00:55:52,124 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 00:55:57,135 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 00:55:57,852 INFO    Thread-12 :301056 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_005525-o15u3xtu/files/config.yaml
+2024-02-07 00:55:59,953 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 00:55:59,954 DEBUG   SenderThread:301056 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 00:56:00,004 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 00:56:03,040 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 00:56:08,042 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 00:56:13,043 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 00:56:14,952 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 00:56:14,953 DEBUG   SenderThread:301056 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 00:56:14,995 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 00:56:17,871 INFO    Thread-12 :301056 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_005525-o15u3xtu/files/output.log
+2024-02-07 00:56:18,601 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 00:56:23,599 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 00:56:26,139 DEBUG   SystemMonitor:301056 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-02-07 00:56:26,147 DEBUG   SenderThread:301056 [sender.py:send():382] send: stats
+2024-02-07 00:56:29,148 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 00:56:29,806 DEBUG   SenderThread:301056 [sender.py:send():382] send: exit
+2024-02-07 00:56:29,806 INFO    SenderThread:301056 [sender.py:send_exit():589] handling exit code: 1
+2024-02-07 00:56:29,806 INFO    SenderThread:301056 [sender.py:send_exit():591] handling runtime: 63
+2024-02-07 00:56:29,808 INFO    SenderThread:301056 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-02-07 00:56:29,808 INFO    SenderThread:301056 [sender.py:send_exit():597] send defer
+2024-02-07 00:56:29,808 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 00:56:29,808 INFO    HandlerThread:301056 [handler.py:handle_request_defer():172] handle defer: 0
+2024-02-07 00:56:29,808 DEBUG   SenderThread:301056 [sender.py:send_request():409] send_request: defer
+2024-02-07 00:56:29,808 INFO    SenderThread:301056 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-02-07 00:56:29,808 INFO    SenderThread:301056 [sender.py:transition_state():617] send defer: 1
+2024-02-07 00:56:29,808 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 00:56:29,808 INFO    HandlerThread:301056 [handler.py:handle_request_defer():172] handle defer: 1
+2024-02-07 00:56:29,809 DEBUG   SenderThread:301056 [sender.py:send_request():409] send_request: defer
+2024-02-07 00:56:29,809 INFO    SenderThread:301056 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-02-07 00:56:29,809 INFO    SenderThread:301056 [sender.py:transition_state():617] send defer: 2
+2024-02-07 00:56:29,809 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 00:56:29,809 INFO    HandlerThread:301056 [handler.py:handle_request_defer():172] handle defer: 2
+2024-02-07 00:56:29,809 INFO    HandlerThread:301056 [system_monitor.py:finish():203] Stopping system monitor
+2024-02-07 00:56:29,809 DEBUG   SystemMonitor:301056 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-02-07 00:56:29,809 DEBUG   SystemMonitor:301056 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-02-07 00:56:29,819 INFO    HandlerThread:301056 [interfaces.py:finish():202] Joined cpu monitor
+2024-02-07 00:56:29,819 INFO    HandlerThread:301056 [interfaces.py:finish():202] Joined disk monitor
+2024-02-07 00:56:29,882 INFO    Thread-12 :301056 [dir_watcher.py:_on_file_created():271] file/dir created: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_005525-o15u3xtu/files/wandb-summary.json
+2024-02-07 00:56:31,883 INFO    Thread-12 :301056 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_005525-o15u3xtu/files/output.log
+2024-02-07 00:56:39,923 INFO    HandlerThread:301056 [interfaces.py:finish():202] Joined gpu monitor
+2024-02-07 00:56:39,923 INFO    HandlerThread:301056 [interfaces.py:finish():202] Joined memory monitor
+2024-02-07 00:56:39,923 INFO    HandlerThread:301056 [interfaces.py:finish():202] Joined network monitor
+2024-02-07 00:56:39,923 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-07 00:56:39,923 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 00:56:39,924 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-07 00:56:39,924 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 00:56:39,926 DEBUG   SenderThread:301056 [sender.py:send_request():409] send_request: defer
+2024-02-07 00:56:39,926 INFO    SenderThread:301056 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-02-07 00:56:39,926 INFO    SenderThread:301056 [sender.py:transition_state():617] send defer: 3
+2024-02-07 00:56:39,926 DEBUG   SenderThread:301056 [sender.py:send():382] send: stats
+2024-02-07 00:56:39,928 DEBUG   SenderThread:301056 [sender.py:send_request():409] send_request: poll_exit
+2024-02-07 00:56:39,929 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 00:56:39,930 INFO    HandlerThread:301056 [handler.py:handle_request_defer():172] handle defer: 3
+2024-02-07 00:56:39,930 DEBUG   SenderThread:301056 [sender.py:send_request():409] send_request: defer
+2024-02-07 00:56:39,930 INFO    SenderThread:301056 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-02-07 00:56:39,930 INFO    SenderThread:301056 [sender.py:transition_state():617] send defer: 4
+2024-02-07 00:56:39,930 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 00:56:39,930 INFO    HandlerThread:301056 [handler.py:handle_request_defer():172] handle defer: 4
+2024-02-07 00:56:39,930 DEBUG   SenderThread:301056 [sender.py:send_request():409] send_request: defer
+2024-02-07 00:56:39,930 INFO    SenderThread:301056 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-02-07 00:56:39,930 INFO    SenderThread:301056 [sender.py:transition_state():617] send defer: 5
+2024-02-07 00:56:39,930 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 00:56:39,930 INFO    HandlerThread:301056 [handler.py:handle_request_defer():172] handle defer: 5
+2024-02-07 00:56:39,930 DEBUG   SenderThread:301056 [sender.py:send():382] send: summary
+2024-02-07 00:56:39,931 INFO    SenderThread:301056 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-02-07 00:56:39,931 DEBUG   SenderThread:301056 [sender.py:send_request():409] send_request: defer
+2024-02-07 00:56:39,931 INFO    SenderThread:301056 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-02-07 00:56:39,931 INFO    SenderThread:301056 [sender.py:transition_state():617] send defer: 6
+2024-02-07 00:56:39,931 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 00:56:39,931 INFO    HandlerThread:301056 [handler.py:handle_request_defer():172] handle defer: 6
+2024-02-07 00:56:39,932 DEBUG   SenderThread:301056 [sender.py:send_request():409] send_request: defer
+2024-02-07 00:56:39,932 INFO    SenderThread:301056 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-02-07 00:56:39,932 INFO    SenderThread:301056 [sender.py:transition_state():617] send defer: 7
+2024-02-07 00:56:39,932 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 00:56:39,932 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 00:56:39,932 INFO    HandlerThread:301056 [handler.py:handle_request_defer():172] handle defer: 7
+2024-02-07 00:56:39,932 DEBUG   SenderThread:301056 [sender.py:send_request():409] send_request: defer
+2024-02-07 00:56:39,932 INFO    SenderThread:301056 [sender.py:send_request_defer():613] handle sender defer: 7
+2024-02-07 00:56:40,816 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-07 00:56:40,889 INFO    Thread-12 :301056 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_005525-o15u3xtu/files/wandb-summary.json
+2024-02-07 00:56:41,620 INFO    SenderThread:301056 [sender.py:transition_state():617] send defer: 8
+2024-02-07 00:56:41,621 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 00:56:41,621 INFO    HandlerThread:301056 [handler.py:handle_request_defer():172] handle defer: 8
+2024-02-07 00:56:41,621 DEBUG   SenderThread:301056 [sender.py:send_request():409] send_request: defer
+2024-02-07 00:56:41,621 INFO    SenderThread:301056 [sender.py:send_request_defer():613] handle sender defer: 8
+2024-02-07 00:56:41,621 INFO    SenderThread:301056 [job_builder.py:build():298] Attempting to build job artifact
+2024-02-07 00:56:41,622 INFO    SenderThread:301056 [job_builder.py:_get_source_type():428] is repo sourced job
+2024-02-07 00:56:41,788 INFO    SenderThread:301056 [job_builder.py:build():404] adding wandb-job metadata file
+2024-02-07 00:56:41,797 INFO    SenderThread:301056 [sender.py:transition_state():617] send defer: 9
+2024-02-07 00:56:41,797 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 00:56:41,797 INFO    HandlerThread:301056 [handler.py:handle_request_defer():172] handle defer: 9
+2024-02-07 00:56:41,798 DEBUG   SenderThread:301056 [sender.py:send():382] send: artifact
+2024-02-07 00:56:41,889 INFO    Thread-12 :301056 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_005525-o15u3xtu/files/output.log
+2024-02-07 00:56:42,125 INFO    SenderThread:301056 [sender.py:send_artifact():1470] sent artifact job-https___github.com_matthias-wright_flaxmodels.git_training_resnet_main.py - {'id': 'QXJ0aWZhY3Q6NzE1NzI4MDky', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEzNzcxOTQzNQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NzE1NzI4MDky', 'versionIndex': 0}}}
+2024-02-07 00:56:42,125 DEBUG   SenderThread:301056 [sender.py:send_request():409] send_request: defer
+2024-02-07 00:56:42,125 INFO    SenderThread:301056 [sender.py:send_request_defer():613] handle sender defer: 9
+2024-02-07 00:56:42,125 INFO    SenderThread:301056 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-02-07 00:56:42,890 INFO    SenderThread:301056 [dir_watcher.py:finish():388] scan: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_005525-o15u3xtu/files
+2024-02-07 00:56:42,891 INFO    SenderThread:301056 [dir_watcher.py:finish():402] scan save: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_005525-o15u3xtu/files/wandb-summary.json wandb-summary.json
+2024-02-07 00:56:42,891 INFO    SenderThread:301056 [dir_watcher.py:finish():402] scan save: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_005525-o15u3xtu/files/requirements.txt requirements.txt
+2024-02-07 00:56:42,891 INFO    SenderThread:301056 [dir_watcher.py:finish():402] scan save: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_005525-o15u3xtu/files/config.yaml config.yaml
+2024-02-07 00:56:42,891 INFO    SenderThread:301056 [dir_watcher.py:finish():402] scan save: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_005525-o15u3xtu/files/output.log output.log
+2024-02-07 00:56:42,891 INFO    SenderThread:301056 [dir_watcher.py:finish():402] scan save: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_005525-o15u3xtu/files/conda-environment.yaml conda-environment.yaml
+2024-02-07 00:56:42,891 INFO    SenderThread:301056 [dir_watcher.py:finish():402] scan save: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_005525-o15u3xtu/files/wandb-metadata.json wandb-metadata.json
+2024-02-07 00:56:42,891 INFO    SenderThread:301056 [sender.py:transition_state():617] send defer: 10
+2024-02-07 00:56:42,892 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 00:56:42,892 INFO    HandlerThread:301056 [handler.py:handle_request_defer():172] handle defer: 10
+2024-02-07 00:56:42,894 DEBUG   SenderThread:301056 [sender.py:send_request():409] send_request: defer
+2024-02-07 00:56:42,894 INFO    SenderThread:301056 [sender.py:send_request_defer():613] handle sender defer: 10
+2024-02-07 00:56:42,894 INFO    SenderThread:301056 [file_pusher.py:finish():175] shutting down file pusher
+2024-02-07 00:56:43,151 INFO    wandb-upload_0:301056 [upload_job.py:push():131] Uploaded file /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_005525-o15u3xtu/files/wandb-summary.json
+2024-02-07 00:56:43,317 INFO    wandb-upload_2:301056 [upload_job.py:push():131] Uploaded file /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_005525-o15u3xtu/files/config.yaml
+2024-02-07 00:56:43,359 INFO    wandb-upload_3:301056 [upload_job.py:push():131] Uploaded file /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_005525-o15u3xtu/files/output.log
+2024-02-07 00:56:43,408 INFO    wandb-upload_4:301056 [upload_job.py:push():131] Uploaded file /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_005525-o15u3xtu/files/conda-environment.yaml
+2024-02-07 00:56:43,572 INFO    wandb-upload_1:301056 [upload_job.py:push():131] Uploaded file /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_005525-o15u3xtu/files/requirements.txt
+2024-02-07 00:56:43,772 INFO    Thread-11 (_thread_body):301056 [sender.py:transition_state():617] send defer: 11
+2024-02-07 00:56:43,773 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 00:56:43,773 INFO    HandlerThread:301056 [handler.py:handle_request_defer():172] handle defer: 11
+2024-02-07 00:56:43,773 DEBUG   SenderThread:301056 [sender.py:send_request():409] send_request: defer
+2024-02-07 00:56:43,773 INFO    SenderThread:301056 [sender.py:send_request_defer():613] handle sender defer: 11
+2024-02-07 00:56:43,773 INFO    SenderThread:301056 [file_pusher.py:join():181] waiting for file pusher
+2024-02-07 00:56:43,774 INFO    SenderThread:301056 [sender.py:transition_state():617] send defer: 12
+2024-02-07 00:56:43,774 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 00:56:43,774 INFO    HandlerThread:301056 [handler.py:handle_request_defer():172] handle defer: 12
+2024-02-07 00:56:43,774 DEBUG   SenderThread:301056 [sender.py:send_request():409] send_request: defer
+2024-02-07 00:56:43,774 INFO    SenderThread:301056 [sender.py:send_request_defer():613] handle sender defer: 12
+2024-02-07 00:56:43,774 INFO    SenderThread:301056 [file_stream.py:finish():595] file stream finish called
+2024-02-07 00:56:43,986 INFO    SenderThread:301056 [file_stream.py:finish():599] file stream finish is done
+2024-02-07 00:56:43,986 INFO    SenderThread:301056 [sender.py:transition_state():617] send defer: 13
+2024-02-07 00:56:43,987 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 00:56:43,987 INFO    HandlerThread:301056 [handler.py:handle_request_defer():172] handle defer: 13
+2024-02-07 00:56:43,987 DEBUG   SenderThread:301056 [sender.py:send_request():409] send_request: defer
+2024-02-07 00:56:43,987 INFO    SenderThread:301056 [sender.py:send_request_defer():613] handle sender defer: 13
+2024-02-07 00:56:43,987 INFO    SenderThread:301056 [sender.py:transition_state():617] send defer: 14
+2024-02-07 00:56:43,987 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 00:56:43,987 INFO    HandlerThread:301056 [handler.py:handle_request_defer():172] handle defer: 14
+2024-02-07 00:56:43,987 DEBUG   SenderThread:301056 [sender.py:send():382] send: final
+2024-02-07 00:56:43,987 DEBUG   SenderThread:301056 [sender.py:send():382] send: footer
+2024-02-07 00:56:43,987 DEBUG   SenderThread:301056 [sender.py:send_request():409] send_request: defer
+2024-02-07 00:56:43,987 INFO    SenderThread:301056 [sender.py:send_request_defer():613] handle sender defer: 14
+2024-02-07 00:56:43,989 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-07 00:56:43,989 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: server_info
+2024-02-07 00:56:43,989 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: get_summary
+2024-02-07 00:56:43,989 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: sampled_history
+2024-02-07 00:56:43,989 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 00:56:43,989 DEBUG   SenderThread:301056 [sender.py:send_request():409] send_request: poll_exit
+2024-02-07 00:56:43,990 DEBUG   SenderThread:301056 [sender.py:send_request():409] send_request: server_info
+2024-02-07 00:56:43,992 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: job_info
+2024-02-07 00:56:44,057 DEBUG   SenderThread:301056 [sender.py:send_request():409] send_request: job_info
+2024-02-07 00:56:44,058 INFO    MainThread:301056 [wandb_run.py:_footer_history_summary_info():3837] rendering history
+2024-02-07 00:56:44,058 INFO    MainThread:301056 [wandb_run.py:_footer_history_summary_info():3869] rendering summary
+2024-02-07 00:56:44,058 INFO    MainThread:301056 [wandb_run.py:_footer_sync_info():3796] logging synced files
+2024-02-07 00:56:44,058 DEBUG   HandlerThread:301056 [handler.py:handle_request():146] handle_request: shutdown
+2024-02-07 00:56:44,058 INFO    HandlerThread:301056 [handler.py:finish():866] shutting down handler
+2024-02-07 00:56:44,992 INFO    WriterThread:301056 [datastore.py:close():294] close: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_005525-o15u3xtu/run-o15u3xtu.wandb
+2024-02-07 00:56:45,059 INFO    SenderThread:301056 [sender.py:finish():1548] shutting down sender
+2024-02-07 00:56:45,059 INFO    SenderThread:301056 [file_pusher.py:finish():175] shutting down file pusher
+2024-02-07 00:56:45,060 INFO    SenderThread:301056 [file_pusher.py:join():181] waiting for file pusher

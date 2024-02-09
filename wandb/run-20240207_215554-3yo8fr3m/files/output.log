@@ -1,0 +1,16 @@
+Shape of the first training image: torch.Size([224, 224, 3])
+Shape of the first validation image: torch.Size([224, 224, 3])
+Training dataset size: 5005
+Validation dataset size: 196
+WARNING:absl:Learning rate schedules in ``flax.training`` are effectively deprecated in favor of Optax schedules. Please refer to https://optax.readthedocs.io/en/latest/api.html#optimizer-schedules for alternatives.
+epoch running!!!
+  0%|                                                                                                             | 0/5005 [00:00<?, ?it/s]
+  0%|                                                                                                             | 0/5005 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/home/alishbaimran/projects/flaxmodels/training/resnet/main.py", line 44, in <module>
+    main()
+  File "/home/alishbaimran/projects/flaxmodels/training/resnet/main.py", line 40, in main
+    training.train_and_evaluate(args)
+  File "/home/alishbaimran/projects/flaxmodels/training/resnet/training.py", line 326, in train_and_evaluate
+    train_batches += 1
+    ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'train_batches' where it is not associated with a value

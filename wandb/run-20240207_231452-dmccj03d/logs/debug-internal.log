@@ -1,0 +1,233 @@
+2024-02-07 23:14:52,800 INFO    StreamThr :2660179 [internal.py:wandb_internal():86] W&B internal server running at pid: 2660179, started at: 2024-02-07 23:14:52.799514
+2024-02-07 23:14:52,804 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: status
+2024-02-07 23:14:52,805 INFO    WriterThread:2660179 [datastore.py:open_for_write():85] open: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_231452-dmccj03d/run-dmccj03d.wandb
+2024-02-07 23:14:52,811 DEBUG   SenderThread:2660179 [sender.py:send():382] send: header
+2024-02-07 23:14:52,811 DEBUG   SenderThread:2660179 [sender.py:send():382] send: run
+2024-02-07 23:14:53,132 INFO    SenderThread:2660179 [dir_watcher.py:__init__():211] watching files in: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_231452-dmccj03d/files
+2024-02-07 23:14:53,132 INFO    SenderThread:2660179 [sender.py:_start_run_threads():1136] run started: dmccj03d with start time 1707347692.796456
+2024-02-07 23:14:53,147 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: check_version
+2024-02-07 23:14:53,148 DEBUG   SenderThread:2660179 [sender.py:send_request():409] send_request: check_version
+2024-02-07 23:14:53,287 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: run_start
+2024-02-07 23:14:53,316 DEBUG   HandlerThread:2660179 [system_info.py:__init__():32] System info init
+2024-02-07 23:14:53,316 DEBUG   HandlerThread:2660179 [system_info.py:__init__():47] System info init done
+2024-02-07 23:14:53,316 INFO    HandlerThread:2660179 [system_monitor.py:start():194] Starting system monitor
+2024-02-07 23:14:53,317 INFO    SystemMonitor:2660179 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-02-07 23:14:53,319 INFO    HandlerThread:2660179 [system_monitor.py:probe():214] Collecting system info
+2024-02-07 23:14:53,320 INFO    SystemMonitor:2660179 [interfaces.py:start():190] Started cpu monitoring
+2024-02-07 23:14:53,321 INFO    SystemMonitor:2660179 [interfaces.py:start():190] Started disk monitoring
+2024-02-07 23:14:53,324 INFO    SystemMonitor:2660179 [interfaces.py:start():190] Started gpu monitoring
+2024-02-07 23:14:53,324 INFO    SystemMonitor:2660179 [interfaces.py:start():190] Started memory monitoring
+2024-02-07 23:14:53,325 INFO    SystemMonitor:2660179 [interfaces.py:start():190] Started network monitoring
+2024-02-07 23:14:53,383 DEBUG   HandlerThread:2660179 [system_info.py:probe():196] Probing system
+2024-02-07 23:14:53,391 DEBUG   HandlerThread:2660179 [system_info.py:_probe_git():181] Probing git
+2024-02-07 23:14:53,410 DEBUG   HandlerThread:2660179 [system_info.py:_probe_git():189] Probing git done
+2024-02-07 23:14:53,410 DEBUG   HandlerThread:2660179 [system_info.py:probe():244] Probing system done
+2024-02-07 23:14:53,410 DEBUG   HandlerThread:2660179 [system_monitor.py:probe():223] {'os': 'Linux-6.5.0-4-amd64-x86_64-with-glibc2.35', 'python': '3.11.5', 'heartbeatAt': '2024-02-07T23:14:53.383535', 'startedAt': '2024-02-07T23:14:52.786820', 'docker': None, 'cuda': None, 'args': ('--wandb',), 'state': 'running', 'program': '/home/alishbaimran/projects/flaxmodels/training/resnet/main.py', 'codePathLocal': 'main.py', 'codePath': 'training/resnet/main.py', 'git': {'remote': 'https://github.com/matthias-wright/flaxmodels.git', 'commit': '600ce8a6b6bf2926ccfc948e7c1ff35edc330d5b'}, 'email': 'alishbai734@gmail.com', 'root': '/home/alishbaimran/projects/flaxmodels', 'host': 'pabti0', 'username': 'alishbaimran', 'executable': '/home/alishbaimran/miniconda3/bin/python', 'cpu_count': 24, 'cpu_count_logical': 48, 'cpu_freq': {'current': 1515.2870000000005, 'min': 1000.0, 'max': 3700.0}, 'cpu_freq_per_core': [{'current': 1000.037, 'min': 1000.0, 'max': 3700.0}, {'current': 999.261, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.058, 'min': 1000.0, 'max': 3700.0}, {'current': 999.715, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.028, 'min': 1000.0, 'max': 3700.0}, {'current': 1652.163, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.0, 'min': 1000.0, 'max': 3700.0}, {'current': 3470.274, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.001, 'min': 1000.0, 'max': 3700.0}, {'current': 3470.236, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.039, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.121, 'min': 1000.0, 'max': 3700.0}, {'current': 999.999, 'min': 1000.0, 'max': 3700.0}, {'current': 1493.351, 'min': 1000.0, 'max': 3700.0}, {'current': 1799.997, 'min': 1000.0, 'max': 3700.0}, {'current': 2115.585, 'min': 1000.0, 'max': 3700.0}, {'current': 1145.345, 'min': 1000.0, 'max': 3700.0}, {'current': 2399.713, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.402, 'min': 1000.0, 'max': 3700.0}, {'current': 999.998, 'min': 1000.0, 'max': 3700.0}, {'current': 3300.002, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.001, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.017, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.003, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.011, 'min': 1000.0, 'max': 3700.0}, {'current': 999.995, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.039, 'min': 1000.0, 'max': 3700.0}, {'current': 999.936, 'min': 1000.0, 'max': 3700.0}, {'current': 1799.862, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.004, 'min': 1000.0, 'max': 3700.0}, {'current': 3297.527, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.791, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1128.118, 'min': 1000.0, 'max': 3700.0}, {'current': 1360.89, 'min': 1000.0, 'max': 3700.0}, {'current': 1800.005, 'min': 1000.0, 'max': 3700.0}, {'current': 1914.372, 'min': 1000.0, 'max': 3700.0}, {'current': 999.991, 'min': 1000.0, 'max': 3700.0}, {'current': 2288.793, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.001, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.003, 'min': 1000.0, 'max': 3700.0}, {'current': 3302.185, 'min': 1000.0, 'max': 3700.0}, {'current': 999.986, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.843, 'min': 1000.0, 'max': 3700.0}, {'current': 999.999, 'min': 1000.0, 'max': 3700.0}], 'disk': {'/': {'total': 416.206298828125, 'used': 20.9149169921875}}, 'gpu': 'NVIDIA GeForce GTX 1080 Ti', 'gpu_count': 6, 'gpu_devices': [{'name': 'NVIDIA GeForce GTX 1080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce GTX 1080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce GTX 1080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce GTX 1080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce GTX 1080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce GTX 1080 Ti', 'memory_total': 11811160064}], 'memory': {'total': 376.55432510375977}}
+2024-02-07 23:14:53,411 INFO    HandlerThread:2660179 [system_monitor.py:probe():224] Finished collecting system info
+2024-02-07 23:14:53,411 INFO    HandlerThread:2660179 [system_monitor.py:probe():227] Publishing system info
+2024-02-07 23:14:53,412 DEBUG   HandlerThread:2660179 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2024-02-07 23:14:53,412 DEBUG   HandlerThread:2660179 [system_info.py:_save_pip():68] Saving pip packages done
+2024-02-07 23:14:53,413 DEBUG   HandlerThread:2660179 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2024-02-07 23:14:54,134 INFO    Thread-12 :2660179 [dir_watcher.py:_on_file_created():271] file/dir created: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_231452-dmccj03d/files/requirements.txt
+2024-02-07 23:14:54,134 INFO    Thread-12 :2660179 [dir_watcher.py:_on_file_created():271] file/dir created: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_231452-dmccj03d/files/conda-environment.yaml
+2024-02-07 23:14:56,134 INFO    Thread-12 :2660179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_231452-dmccj03d/files/conda-environment.yaml
+2024-02-07 23:14:56,191 DEBUG   HandlerThread:2660179 [system_info.py:_save_conda():87] Saving conda packages done
+2024-02-07 23:14:56,194 INFO    HandlerThread:2660179 [system_monitor.py:probe():229] Finished publishing system info
+2024-02-07 23:14:56,211 DEBUG   SenderThread:2660179 [sender.py:send():382] send: files
+2024-02-07 23:14:56,211 INFO    SenderThread:2660179 [sender.py:_save_file():1392] saving file wandb-metadata.json with policy now
+2024-02-07 23:14:56,225 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 23:14:56,226 DEBUG   SenderThread:2660179 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 23:14:56,232 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 23:14:56,375 DEBUG   SenderThread:2660179 [sender.py:send():382] send: telemetry
+2024-02-07 23:14:56,653 INFO    wandb-upload_0:2660179 [upload_job.py:push():131] Uploaded file /tmp/tmpek0shfk6wandb/xaql8tg6-wandb-metadata.json
+2024-02-07 23:14:57,135 INFO    Thread-12 :2660179 [dir_watcher.py:_on_file_created():271] file/dir created: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_231452-dmccj03d/files/wandb-metadata.json
+2024-02-07 23:14:58,376 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 23:15:03,378 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 23:15:08,143 INFO    Thread-12 :2660179 [dir_watcher.py:_on_file_created():271] file/dir created: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_231452-dmccj03d/files/output.log
+2024-02-07 23:15:08,983 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 23:15:10,144 INFO    Thread-12 :2660179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_231452-dmccj03d/files/output.log
+2024-02-07 23:15:11,226 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 23:15:11,227 DEBUG   SenderThread:2660179 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 23:15:11,228 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 23:15:14,406 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 23:15:19,407 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 23:15:24,411 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 23:15:25,156 INFO    Thread-12 :2660179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_231452-dmccj03d/files/config.yaml
+2024-02-07 23:15:26,226 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 23:15:26,227 DEBUG   SenderThread:2660179 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 23:15:26,268 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 23:15:30,333 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 23:15:35,333 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 23:15:41,093 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 23:15:41,167 INFO    Thread-12 :2660179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_231452-dmccj03d/files/output.log
+2024-02-07 23:15:41,227 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 23:15:41,228 DEBUG   SenderThread:2660179 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 23:15:41,231 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 23:15:43,168 INFO    Thread-12 :2660179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_231452-dmccj03d/files/output.log
+2024-02-07 23:15:44,169 INFO    Thread-12 :2660179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_231452-dmccj03d/files/output.log
+2024-02-07 23:15:45,169 INFO    Thread-12 :2660179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_231452-dmccj03d/files/output.log
+2024-02-07 23:15:46,170 INFO    Thread-12 :2660179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_231452-dmccj03d/files/output.log
+2024-02-07 23:15:46,814 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 23:15:47,171 INFO    Thread-12 :2660179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_231452-dmccj03d/files/output.log
+2024-02-07 23:15:48,172 INFO    Thread-12 :2660179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_231452-dmccj03d/files/output.log
+2024-02-07 23:15:49,172 INFO    Thread-12 :2660179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_231452-dmccj03d/files/output.log
+2024-02-07 23:15:50,173 INFO    Thread-12 :2660179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_231452-dmccj03d/files/output.log
+2024-02-07 23:15:51,174 INFO    Thread-12 :2660179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_231452-dmccj03d/files/output.log
+2024-02-07 23:15:52,027 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 23:15:52,175 INFO    Thread-12 :2660179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_231452-dmccj03d/files/output.log
+2024-02-07 23:15:53,175 INFO    Thread-12 :2660179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_231452-dmccj03d/files/output.log
+2024-02-07 23:15:53,326 DEBUG   SystemMonitor:2660179 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-02-07 23:15:53,337 DEBUG   SenderThread:2660179 [sender.py:send():382] send: stats
+2024-02-07 23:15:54,176 INFO    Thread-12 :2660179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_231452-dmccj03d/files/output.log
+2024-02-07 23:15:55,177 INFO    Thread-12 :2660179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_231452-dmccj03d/files/output.log
+2024-02-07 23:15:56,178 INFO    Thread-12 :2660179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_231452-dmccj03d/files/output.log
+2024-02-07 23:15:56,228 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 23:15:56,228 DEBUG   SenderThread:2660179 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 23:15:56,230 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 23:15:57,178 INFO    Thread-12 :2660179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_231452-dmccj03d/files/output.log
+2024-02-07 23:15:57,906 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 23:15:58,179 INFO    Thread-12 :2660179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_231452-dmccj03d/files/output.log
+2024-02-07 23:15:59,180 INFO    Thread-12 :2660179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_231452-dmccj03d/files/output.log
+2024-02-07 23:16:00,180 INFO    Thread-12 :2660179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_231452-dmccj03d/files/output.log
+2024-02-07 23:16:00,545 DEBUG   SenderThread:2660179 [sender.py:send():382] send: exit
+2024-02-07 23:16:00,545 INFO    SenderThread:2660179 [sender.py:send_exit():589] handling exit code: 255
+2024-02-07 23:16:00,545 INFO    SenderThread:2660179 [sender.py:send_exit():591] handling runtime: 67
+2024-02-07 23:16:00,546 INFO    SenderThread:2660179 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-02-07 23:16:00,547 INFO    SenderThread:2660179 [sender.py:send_exit():597] send defer
+2024-02-07 23:16:00,547 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 23:16:00,547 INFO    HandlerThread:2660179 [handler.py:handle_request_defer():172] handle defer: 0
+2024-02-07 23:16:00,548 DEBUG   SenderThread:2660179 [sender.py:send_request():409] send_request: defer
+2024-02-07 23:16:00,548 INFO    SenderThread:2660179 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-02-07 23:16:00,548 INFO    SenderThread:2660179 [sender.py:transition_state():617] send defer: 1
+2024-02-07 23:16:00,549 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 23:16:00,549 INFO    HandlerThread:2660179 [handler.py:handle_request_defer():172] handle defer: 1
+2024-02-07 23:16:00,549 DEBUG   SenderThread:2660179 [sender.py:send_request():409] send_request: defer
+2024-02-07 23:16:00,549 INFO    SenderThread:2660179 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-02-07 23:16:00,549 INFO    SenderThread:2660179 [sender.py:transition_state():617] send defer: 2
+2024-02-07 23:16:00,549 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 23:16:00,549 INFO    HandlerThread:2660179 [handler.py:handle_request_defer():172] handle defer: 2
+2024-02-07 23:16:00,550 INFO    HandlerThread:2660179 [system_monitor.py:finish():203] Stopping system monitor
+2024-02-07 23:16:00,550 DEBUG   SystemMonitor:2660179 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-02-07 23:16:00,551 DEBUG   SystemMonitor:2660179 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-02-07 23:16:00,551 INFO    HandlerThread:2660179 [interfaces.py:finish():202] Joined cpu monitor
+2024-02-07 23:16:00,554 INFO    HandlerThread:2660179 [interfaces.py:finish():202] Joined disk monitor
+2024-02-07 23:16:01,181 INFO    Thread-12 :2660179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_231452-dmccj03d/files/output.log
+2024-02-07 23:16:01,182 INFO    Thread-12 :2660179 [dir_watcher.py:_on_file_created():271] file/dir created: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_231452-dmccj03d/files/wandb-summary.json
+2024-02-07 23:16:02,125 INFO    HandlerThread:2660179 [interfaces.py:finish():202] Joined gpu monitor
+2024-02-07 23:16:02,126 INFO    HandlerThread:2660179 [interfaces.py:finish():202] Joined memory monitor
+2024-02-07 23:16:02,126 INFO    HandlerThread:2660179 [interfaces.py:finish():202] Joined network monitor
+2024-02-07 23:16:02,126 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-07 23:16:02,130 DEBUG   SenderThread:2660179 [sender.py:send_request():409] send_request: defer
+2024-02-07 23:16:02,131 INFO    SenderThread:2660179 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-02-07 23:16:02,131 INFO    SenderThread:2660179 [sender.py:transition_state():617] send defer: 3
+2024-02-07 23:16:02,131 DEBUG   SenderThread:2660179 [sender.py:send():382] send: stats
+2024-02-07 23:16:02,131 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 23:16:02,133 DEBUG   SenderThread:2660179 [sender.py:send_request():409] send_request: poll_exit
+2024-02-07 23:16:02,133 INFO    HandlerThread:2660179 [handler.py:handle_request_defer():172] handle defer: 3
+2024-02-07 23:16:02,134 DEBUG   SenderThread:2660179 [sender.py:send_request():409] send_request: defer
+2024-02-07 23:16:02,134 INFO    SenderThread:2660179 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-02-07 23:16:02,135 INFO    SenderThread:2660179 [sender.py:transition_state():617] send defer: 4
+2024-02-07 23:16:02,135 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 23:16:02,135 INFO    HandlerThread:2660179 [handler.py:handle_request_defer():172] handle defer: 4
+2024-02-07 23:16:02,135 DEBUG   SenderThread:2660179 [sender.py:send_request():409] send_request: defer
+2024-02-07 23:16:02,135 INFO    SenderThread:2660179 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-02-07 23:16:02,135 INFO    SenderThread:2660179 [sender.py:transition_state():617] send defer: 5
+2024-02-07 23:16:02,136 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 23:16:02,136 INFO    HandlerThread:2660179 [handler.py:handle_request_defer():172] handle defer: 5
+2024-02-07 23:16:02,136 DEBUG   SenderThread:2660179 [sender.py:send():382] send: summary
+2024-02-07 23:16:02,137 INFO    SenderThread:2660179 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-02-07 23:16:02,137 DEBUG   SenderThread:2660179 [sender.py:send_request():409] send_request: defer
+2024-02-07 23:16:02,137 INFO    SenderThread:2660179 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-02-07 23:16:02,137 INFO    SenderThread:2660179 [sender.py:transition_state():617] send defer: 6
+2024-02-07 23:16:02,138 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 23:16:02,138 INFO    HandlerThread:2660179 [handler.py:handle_request_defer():172] handle defer: 6
+2024-02-07 23:16:02,138 DEBUG   SenderThread:2660179 [sender.py:send_request():409] send_request: defer
+2024-02-07 23:16:02,138 INFO    SenderThread:2660179 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-02-07 23:16:02,139 INFO    SenderThread:2660179 [sender.py:transition_state():617] send defer: 7
+2024-02-07 23:16:02,139 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 23:16:02,139 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 23:16:02,140 INFO    HandlerThread:2660179 [handler.py:handle_request_defer():172] handle defer: 7
+2024-02-07 23:16:02,140 DEBUG   SenderThread:2660179 [sender.py:send_request():409] send_request: defer
+2024-02-07 23:16:02,140 INFO    SenderThread:2660179 [sender.py:send_request_defer():613] handle sender defer: 7
+2024-02-07 23:16:02,182 INFO    Thread-12 :2660179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_231452-dmccj03d/files/output.log
+2024-02-07 23:16:02,182 INFO    Thread-12 :2660179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_231452-dmccj03d/files/wandb-summary.json
+2024-02-07 23:16:02,545 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-07 23:16:05,125 INFO    SenderThread:2660179 [sender.py:transition_state():617] send defer: 8
+2024-02-07 23:16:05,126 DEBUG   SenderThread:2660179 [sender.py:send_request():409] send_request: poll_exit
+2024-02-07 23:16:05,126 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 23:16:05,126 INFO    HandlerThread:2660179 [handler.py:handle_request_defer():172] handle defer: 8
+2024-02-07 23:16:05,127 DEBUG   SenderThread:2660179 [sender.py:send_request():409] send_request: defer
+2024-02-07 23:16:05,127 INFO    SenderThread:2660179 [sender.py:send_request_defer():613] handle sender defer: 8
+2024-02-07 23:16:05,127 INFO    SenderThread:2660179 [job_builder.py:build():298] Attempting to build job artifact
+2024-02-07 23:16:05,128 INFO    SenderThread:2660179 [job_builder.py:_get_source_type():428] is repo sourced job
+2024-02-07 23:16:05,169 INFO    SenderThread:2660179 [job_builder.py:build():404] adding wandb-job metadata file
+2024-02-07 23:16:05,183 INFO    SenderThread:2660179 [sender.py:transition_state():617] send defer: 9
+2024-02-07 23:16:05,184 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 23:16:05,184 DEBUG   SenderThread:2660179 [sender.py:send():382] send: artifact
+2024-02-07 23:16:05,184 INFO    HandlerThread:2660179 [handler.py:handle_request_defer():172] handle defer: 9
+2024-02-07 23:16:05,188 INFO    Thread-12 :2660179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_231452-dmccj03d/files/output.log
+2024-02-07 23:16:05,587 INFO    SenderThread:2660179 [sender.py:send_artifact():1470] sent artifact job-https___github.com_matthias-wright_flaxmodels.git_training_resnet_main.py - {'id': 'QXJ0aWZhY3Q6NzE1NzI4MDky', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEzNzcxOTQzNQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NzE1NzI4MDky', 'versionIndex': 0}}}
+2024-02-07 23:16:05,587 DEBUG   SenderThread:2660179 [sender.py:send_request():409] send_request: defer
+2024-02-07 23:16:05,587 INFO    SenderThread:2660179 [sender.py:send_request_defer():613] handle sender defer: 9
+2024-02-07 23:16:05,588 INFO    SenderThread:2660179 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-02-07 23:16:06,189 INFO    SenderThread:2660179 [dir_watcher.py:finish():388] scan: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_231452-dmccj03d/files
+2024-02-07 23:16:06,190 INFO    SenderThread:2660179 [dir_watcher.py:finish():402] scan save: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_231452-dmccj03d/files/requirements.txt requirements.txt
+2024-02-07 23:16:06,190 INFO    SenderThread:2660179 [dir_watcher.py:finish():402] scan save: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_231452-dmccj03d/files/wandb-metadata.json wandb-metadata.json
+2024-02-07 23:16:06,190 INFO    SenderThread:2660179 [dir_watcher.py:finish():402] scan save: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_231452-dmccj03d/files/conda-environment.yaml conda-environment.yaml
+2024-02-07 23:16:06,196 INFO    SenderThread:2660179 [dir_watcher.py:finish():402] scan save: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_231452-dmccj03d/files/config.yaml config.yaml
+2024-02-07 23:16:06,201 INFO    SenderThread:2660179 [dir_watcher.py:finish():402] scan save: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_231452-dmccj03d/files/wandb-summary.json wandb-summary.json
+2024-02-07 23:16:06,202 INFO    SenderThread:2660179 [dir_watcher.py:finish():402] scan save: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_231452-dmccj03d/files/output.log output.log
+2024-02-07 23:16:06,210 INFO    SenderThread:2660179 [sender.py:transition_state():617] send defer: 10
+2024-02-07 23:16:06,211 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 23:16:06,212 INFO    HandlerThread:2660179 [handler.py:handle_request_defer():172] handle defer: 10
+2024-02-07 23:16:06,216 DEBUG   SenderThread:2660179 [sender.py:send_request():409] send_request: defer
+2024-02-07 23:16:06,216 INFO    SenderThread:2660179 [sender.py:send_request_defer():613] handle sender defer: 10
+2024-02-07 23:16:06,216 INFO    SenderThread:2660179 [file_pusher.py:finish():175] shutting down file pusher
+2024-02-07 23:16:06,467 INFO    wandb-upload_0:2660179 [upload_job.py:push():131] Uploaded file /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_231452-dmccj03d/files/requirements.txt
+2024-02-07 23:16:06,687 INFO    wandb-upload_1:2660179 [upload_job.py:push():131] Uploaded file /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_231452-dmccj03d/files/conda-environment.yaml
+2024-02-07 23:16:06,695 INFO    wandb-upload_4:2660179 [upload_job.py:push():131] Uploaded file /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_231452-dmccj03d/files/output.log
+2024-02-07 23:16:06,771 INFO    wandb-upload_2:2660179 [upload_job.py:push():131] Uploaded file /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_231452-dmccj03d/files/config.yaml
+2024-02-07 23:16:06,841 INFO    wandb-upload_3:2660179 [upload_job.py:push():131] Uploaded file /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_231452-dmccj03d/files/wandb-summary.json
+2024-02-07 23:16:07,042 INFO    Thread-11 (_thread_body):2660179 [sender.py:transition_state():617] send defer: 11
+2024-02-07 23:16:07,043 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 23:16:07,043 INFO    HandlerThread:2660179 [handler.py:handle_request_defer():172] handle defer: 11
+2024-02-07 23:16:07,044 DEBUG   SenderThread:2660179 [sender.py:send_request():409] send_request: defer
+2024-02-07 23:16:07,044 INFO    SenderThread:2660179 [sender.py:send_request_defer():613] handle sender defer: 11
+2024-02-07 23:16:07,045 INFO    SenderThread:2660179 [file_pusher.py:join():181] waiting for file pusher
+2024-02-07 23:16:07,045 INFO    SenderThread:2660179 [sender.py:transition_state():617] send defer: 12
+2024-02-07 23:16:07,045 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 23:16:07,045 INFO    HandlerThread:2660179 [handler.py:handle_request_defer():172] handle defer: 12
+2024-02-07 23:16:07,046 DEBUG   SenderThread:2660179 [sender.py:send_request():409] send_request: defer
+2024-02-07 23:16:07,046 INFO    SenderThread:2660179 [sender.py:send_request_defer():613] handle sender defer: 12
+2024-02-07 23:16:07,046 INFO    SenderThread:2660179 [file_stream.py:finish():595] file stream finish called
+2024-02-07 23:16:07,256 INFO    SenderThread:2660179 [file_stream.py:finish():599] file stream finish is done
+2024-02-07 23:16:07,257 INFO    SenderThread:2660179 [sender.py:transition_state():617] send defer: 13
+2024-02-07 23:16:07,257 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 23:16:07,257 INFO    HandlerThread:2660179 [handler.py:handle_request_defer():172] handle defer: 13
+2024-02-07 23:16:07,258 DEBUG   SenderThread:2660179 [sender.py:send_request():409] send_request: defer
+2024-02-07 23:16:07,258 INFO    SenderThread:2660179 [sender.py:send_request_defer():613] handle sender defer: 13
+2024-02-07 23:16:07,258 INFO    SenderThread:2660179 [sender.py:transition_state():617] send defer: 14
+2024-02-07 23:16:07,259 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 23:16:07,259 DEBUG   SenderThread:2660179 [sender.py:send():382] send: final
+2024-02-07 23:16:07,259 INFO    HandlerThread:2660179 [handler.py:handle_request_defer():172] handle defer: 14
+2024-02-07 23:16:07,259 DEBUG   SenderThread:2660179 [sender.py:send():382] send: footer
+2024-02-07 23:16:07,260 DEBUG   SenderThread:2660179 [sender.py:send_request():409] send_request: defer
+2024-02-07 23:16:07,260 INFO    SenderThread:2660179 [sender.py:send_request_defer():613] handle sender defer: 14
+2024-02-07 23:16:07,261 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-07 23:16:07,262 DEBUG   SenderThread:2660179 [sender.py:send_request():409] send_request: poll_exit
+2024-02-07 23:16:07,262 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: server_info
+2024-02-07 23:16:07,262 DEBUG   SenderThread:2660179 [sender.py:send_request():409] send_request: server_info
+2024-02-07 23:16:07,264 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: get_summary
+2024-02-07 23:16:07,264 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: sampled_history
+2024-02-07 23:16:07,265 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 23:16:07,265 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: job_info
+2024-02-07 23:16:07,339 DEBUG   SenderThread:2660179 [sender.py:send_request():409] send_request: job_info
+2024-02-07 23:16:07,339 INFO    MainThread:2660179 [wandb_run.py:_footer_history_summary_info():3837] rendering history
+2024-02-07 23:16:07,340 INFO    MainThread:2660179 [wandb_run.py:_footer_history_summary_info():3869] rendering summary
+2024-02-07 23:16:07,340 INFO    MainThread:2660179 [wandb_run.py:_footer_sync_info():3796] logging synced files
+2024-02-07 23:16:07,341 DEBUG   HandlerThread:2660179 [handler.py:handle_request():146] handle_request: shutdown
+2024-02-07 23:16:07,341 INFO    HandlerThread:2660179 [handler.py:finish():866] shutting down handler
+2024-02-07 23:16:08,266 INFO    WriterThread:2660179 [datastore.py:close():294] close: /home/alishbaimran/projects/flaxmodels/training/resnet/wandb/run-20240207_231452-dmccj03d/run-dmccj03d.wandb
+2024-02-07 23:16:08,339 INFO    SenderThread:2660179 [sender.py:finish():1548] shutting down sender
+2024-02-07 23:16:08,340 INFO    SenderThread:2660179 [file_pusher.py:finish():175] shutting down file pusher
+2024-02-07 23:16:08,340 INFO    SenderThread:2660179 [file_pusher.py:join():181] waiting for file pusher
