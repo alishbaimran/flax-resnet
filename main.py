@@ -34,7 +34,7 @@ def main():
             os.makedirs(args.ckpt_dir)
 
         if args.wandb:
-            wandb.login(key="647e50adb12fd19103925b4d7f4528d96e6b1c6d")
+            wandb.login(key="-")
             wandb.init(project="unet-foveal", name=args.name)
 
     training.train_and_evaluate(args)
